@@ -27,6 +27,48 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  
+  <!-- Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- Pie Chart code -->
+  <script>
+  window.onload = function() {
+
+  var chart = new CanvasJS.Chart("chartContainer", {
+    animationEnabled: true,
+    title: {
+      text: "Percentage Breakdown"
+    },
+    data: [{
+      type: "pie",
+      startAngle: 240,
+      yValueFormatString: "##0.00\"%\"",
+      indexLabel: "{label} {y}",
+      dataPoints: [
+        {y: 20, label: "Founders and Advisors"},
+        {y: 10, label: "Developers"},
+        {y: 10, label: "Private Round"},
+        {y: 60, label: "Public Rounds(I,II,III)"}
+      ]
+    }]
+  });
+  chart.render();
+
+  }
+  </script>
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 
 </head>
 
@@ -190,13 +232,40 @@
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Token Distribution</h2>
-          <p>Tokenomics</p>
+          <h2></h2>
+          <p style="margin-bottom: 4rem;">Tokenomics</p>
+          <div class="container-fluid padding" style="margin-bottom: 3rem;">
+            <div class="row text-center padding">
+                <div class="col-md-6" id="supply-div">
+                    <h3 style="font-weight: 800; ">Supply</h3>
+                    <p></p>
+                    <p id="supply">1 Trillion Tokens</p>
+                    <p id="launch-para">Launchpad Offering: 1B tokens for $2M </p>
+                    <p id ="launch-pool">Buy services and products<br>
+                       in the Longevity Marketspace <br></p>
+                    <a href="https://play.google.com/store/apps/details?id=com.application.bmiobesity&hl=en_IN&gl=US"
+                    target="_blank" style="margin-right: 8px;">
+                      <i class="fa fa-android" style="font-size:24px"></i>
+                    </a>
+                    <a href="https://apps.apple.com/us/app/antiobesity/id1511198472"
+                    target="_blank">
+                      <i class="fa fa-apple" style="font-size:24px"></i>
+                    </a>
+                    <p></p>
+                    <a href="https://imgur.com/a/1FuLbV6" target="_blank">
+                      <button class="btn btn-primary" style="border-radius: 18px; margin-top: 3rem;">Allocation</button>    
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <div id="chartContainer" style="height: 300px; width: 100%;"></div>                
+                </div>
+              </div>
+          </div>
         </div>
         
       </section> 
-        <!-- End TOKENOMICS -->
-         <!-- ======= WHITEPAPER ======= -->
+<!-- End TOKENOMICS -->
+         <!-- ======= WHITEPAPER ======= 
         <section id="Whitepaper" class="Whitepaper">
           <div class="container">
     
@@ -212,7 +281,7 @@
     
           </section>
 
-
+-->
 <!-- End WHITEPAPER -->
 <!--  Features Section -->
 <section id="features" class="features">
