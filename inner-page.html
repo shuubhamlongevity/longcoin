@@ -47,7 +47,14 @@
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> <span class="nav-label">Buy LONG</span> <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a class="getstarted scrollto" href="#BNB">Buy via BNB</a></li>
+              <li><a class="getstarted scrollto" href="#pricing">Buy via other Cryptocurrency</a></li>  
+              <li><a class="getstarted scrollto" href="#Whitepaper">Buy via Paypal</a></li>
+              
+            </ul>
           <li><a class="nav-link scrollto active" href="#refer">Refer</a></li>
           
           <li class="dropdown">
@@ -182,8 +189,8 @@
                     
                     body {font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; color: #000000; background-color: #ffffff; font-size: 26px; font-weight: 400;}
             
-                    h1 { font-size: 34px; font-weight: 700;}
-                    h2 { font-size: 22px; font-weight: 500;}
+                    h1 { font-size: 34px; font-weight: 700;color: rgb(0, 60, 255);}
+                    h2 { font-size: 22px; font-weight: 500;color: rgb(22, 0, 145);}
             
                     .small {
                         font-size: 22px;
@@ -223,10 +230,10 @@
                     }
                     
                     button {
-                      background-color: #000000;
+                      background-color: #6ae4ff;
                       border: none;
                       border-radius: 2px;
-                      color: white;
+                      color: rgb(0, 0, 0);
                       padding: 5px 20px;
                       text-align: center;
                       text-decoration: none;
@@ -264,7 +271,14 @@
             </head>
             
             <body>
-                
+              <section id="BNB" class="BNB">
+                <div class="container">
+          
+                  <div class="section-title" data-aos="fade-up">
+                    <h2>Pricing</h2>
+                    <p>Buy LONG via BNB</p>
+                  </div>
+          
                 <div style="text-align: center">
                     <button id="connect" style="font-size: 32px">Connect</button> <button class="switch" id="addMainBSC" style="font-size: 32px;">To BSC Mainnet</button>
                     <span id="nometamask" class="err" style="display: none">Please install Metamask first...</span>
@@ -306,8 +320,8 @@
                   <div class="container">
             
                     <div class="section-title" data-aos="fade-up">
-                      <h2>Pricing&Donate</h2>
-                      <p>Buy LongevityCoin</p>
+                      <h2>Pricing</h2>
+                      <p>Buy LONG via Crypto</p>
                     </div>
             
                     
@@ -378,7 +392,7 @@
             
                     <div class="section-title" data-aos="fade-up">
                       <h2></h2>
-                      <p>Buy through Paypal</p>
+                      <p>Buy through Paypal</p></div>
                       <div id="smart-button-container">
                         <div style="text-align: center;">
                           <div style="margin-bottom: 1.25rem;">
@@ -489,7 +503,7 @@
                         <div class="section-title" data-aos="fade-up">
                           <h2></h2>
                           <p>Refer & Earn</p>
-                                
+                        </div>     
     <div id="refarea" style="text-align: center">
       <h1>Referral program</h1>
       <p>Share your referral link and get paid instantly to your wallet for every referred token purchase.</p>
