@@ -170,6 +170,7 @@
     selector: '.gallery-lightbox'
   });
 
+  
   /**
    * Testimonials slider
    */
