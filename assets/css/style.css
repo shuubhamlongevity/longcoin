@@ -907,17 +907,11 @@ section {
 }
 
 
-.roadmap {
-  background-image: url("https://wallpapercave.com/wp/wp2237150.jpg");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-     
-}
+
 
 
   .Whitepaper {
-    background-image: url("https://wallpapercave.com/wp/wp2237150.jpg");
+    background-image: url("/assets/img/backgroundbl.webp");
           background-repeat: no-repeat;
           background-attachment: fixed;
           background-size: cover;
@@ -926,7 +920,7 @@ section {
 
 
 .features {
-    background-image: url("https://wallpapercave.com/wp/wp2237150.jpg");
+    background-image: url("/assets/img/backgroundbl.webp");
           background-repeat: no-repeat;
           background-attachment: fixed;
           background-size: cover;
