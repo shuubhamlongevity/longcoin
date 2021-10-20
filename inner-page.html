@@ -1,95 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <style>
-body{font-family:"Open Sans",sans-serif;color:#000}a{color:#1acc8d;text-decoration:none}a:hover{color:#34e5a6;text-decoration:none}h1,h2,h3,h4,h5,h6{font-family:"Montserrat",sans-serif}#preloader{position:fixed;top:0;left:0;right:0;bottom:0;z-index:9999;overflow:hidden;background:#fff}#preloader:before{content:"";position:fixed;top:calc(50% - 30px);left:calc(50% - 30px);border:6px solid #1acc8d;border-top-color:#d2f9eb;border-radius:50%;width:60px;height:60px;-webkit-animation:animate-preloader 1s linear infinite;animation:animate-preloader 1s linear infinite}@-webkit-keyframes animate-preloader{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}@keyframes animate-preloader{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}.back-to-top{position:fixed;visibility:hidden;opacity:0;right:15px;bottom:15px;z-index:996;background:#1acc8d;width:40px;height:40px;border-radius:50px;transition:all .4s}.back-to-top i{font-size:28px;color:#fff;line-height:0}.back-to-top:hover{background:#2be4a2;color:#fff}.back-to-top.active{visibility:visible;opacity:1}@media screen and (max-width:768px){[data-aos-delay]{transition-delay:0!important}}#header{height:80px;transition:all .5s;z-index:997;transition:all .5s;background:rgba(1,4,136,0.9)}#header.header-transparent{background:transparent}#header.header-scrolled{background:rgba(1,4,136,0.9);height:60px}#header .logo h1{font-size:28px;margin:0;padding:0;line-height:1;font-weight:700}#header .logo h1 a,#header .logo h1 a:hover{color:#fff;text-decoration:none}#header .logo img{padding:0;margin:0;max-height:40px}.navbar{padding:0}.navbar ul{margin:0;padding:0;display:flex;list-style:none;align-items:center}.navbar li{position:relative}.navbar a,.navbar a:focus{display:flex;align-items:center;justify-content:space-between;padding:10px 0 10px 30px;font-size:15px;font-weight:500;font-family:"Poppins",sans-serif;color:rgba(255,255,255,0.7);white-space:nowrap;transition:.3s}.navbar a i,.navbar a:focus i{font-size:12px;line-height:0;margin-left:5px}.navbar>ul>li>a:before{content:"";position:absolute;width:0;height:2px;bottom:3px;left:30px;background-color:#1acc8d;visibility:hidden;width:0;transition:all .3s ease-in-out 0s}.navbar a:hover:before,.navbar li:hover>a:before,.navbar .active:before{visibility:visible;width:25px}.navbar a:hover,.navbar .active,.navbar .active:focus,.navbar li:hover>a{color:#fff}.navbar .dropdown ul{display:block;position:absolute;left:30px;top:calc(100%+30px);margin:0;padding:10px 0;z-index:99;opacity:0;visibility:hidden;background:#fff;box-shadow:0 0 30px rgba(127,137,161,0.25);transition:.3s;border-radius:4px}.navbar .dropdown ul li{min-width:200px}.navbar .dropdown ul a{padding:10px 20px;font-size:14px;font-weight:500;text-transform:none;color:#01036f}.navbar .dropdown ul a i{font-size:12px}.navbar .dropdown ul a:hover,.navbar .dropdown ul .active:hover,.navbar .dropdown ul li:hover>a{color:#1acc8d}.navbar .dropdown:hover>ul{opacity:1;top:100%;visibility:visible}.navbar .dropdown .dropdown ul{top:0;left:calc(100% - 30px);visibility:hidden}.navbar .dropdown .dropdown:hover>ul{opacity:1;top:0;left:100%;visibility:visible}@media(max-width:1366px){.navbar .dropdown .dropdown ul{left:-90%}.navbar .dropdown .dropdown:hover>ul{left:-100%}}.mobile-nav-toggle{color:#fff;font-size:28px;cursor:pointer;display:none;line-height:0;transition:.5s}@media(max-width:991px){.mobile-nav-toggle{display:block}.navbar ul{display:none}}.navbar-mobile{position:fixed;overflow:hidden;top:0;right:0;left:0;bottom:0;background:rgba(1,3,91,0.9);transition:.3s;z-index:999}.navbar-mobile .mobile-nav-toggle{position:absolute;top:15px;right:15px}.navbar-mobile ul{display:block;position:absolute;top:55px;right:15px;bottom:15px;left:15px;padding:10px 0;border-radius:8px;background-color:#fff;overflow-y:auto;transition:.3s}.navbar-mobile>ul>li>a:before{left:20px}.navbar-mobile a{padding:10px 20px;font-size:15px;color:#0205a1}.navbar-mobile a:hover,.navbar-mobile .active,.navbar-mobile li:hover>a{color:#3f43fd}.navbar-mobile .getstarted{margin:15px}.navbar-mobile .dropdown ul{position:static;display:none;margin:10px 20px;padding:10px 0;z-index:99;opacity:1;visibility:visible;background:#fff;box-shadow:0 0 30px rgba(127,137,161,0.25)}.navbar-mobile .dropdown ul li{min-width:200px}.navbar-mobile .dropdown ul a{padding:10px 20px}.navbar-mobile .dropdown ul a i{font-size:12px}.navbar-mobile .dropdown ul a:hover,.navbar-mobile .dropdown ul .active:hover,.navbar-mobile .dropdown ul li:hover>a{color:#1acc8d}.navbar-mobile .dropdown>.dropdown-active{display:block}#hero{width:100%;background:url("../img/ezgif.com-gif-maker\ \(2\).webp");position:relative;padding:120px 0 0 0}#hero:before{content:"";background:rgba(2,5,161,0.91);position:absolute;bottom:0;top:0;left:0;right:0}#hero h1{margin:0 0 20px 0;font-size:48px;font-weight:700;line-height:56px;color:rgba(255,255,255,0.8)}#hero h1 span{color:#fff;border-bottom:4px solid #1acc8d}#hero h2{color:rgba(255,255,255,0.8);margin-bottom:40px;font-size:24px}#hero .btn-get-started{font-family:"Montserrat",sans-serif;font-weight:500;font-size:16px;letter-spacing:1px;display:inline-block;padding:10px 30px;border-radius:50px;transition:.5s;color:#fff;background:#1acc8d}#hero .btn-get-started:hover{background:#17b57d}#hero .animated{animation:up-down 2s ease-in-out infinite alternate-reverse both}@media(min-width:1024px){#hero{background-attachment:fixed}}@media(max-width:991px){#hero{padding-top:80px}#hero .animated{-webkit-animation:none;animation:none}#hero .hero-img{text-align:center}#hero .hero-img img{max-width:50%}#hero h1{font-size:28px;line-height:32px;margin-bottom:10px}#hero h2{font-size:18px;line-height:24px;margin-bottom:30px}}@media(max-width:575px){#hero .hero-img img{width:80%}}@-webkit-keyframes up-down{0%{transform:translateY(10px)}100%{transform:translateY(-10px)}}@keyframes up-down{0%{transform:translateY(10px)}100%{transform:translateY(-10px)}}.hero-waves{display:block;margin-top:60px;width:100%;height:60px;z-index:5;position:relative}.wave1 use{-webkit-animation:move-forever1 10s linear infinite;animation:move-forever1 10s linear infinite;-webkit-animation-delay:-2s;animation-delay:-2s}.wave2 use{-webkit-animation:move-forever2 8s linear infinite;animation:move-forever2 8s linear infinite;-webkit-animation-delay:-2s;animation-delay:-2s}.wave3 use{-webkit-animation:move-forever3 6s linear infinite;animation:move-forever3 6s linear infinite;-webkit-animation-delay:-2s;animation-delay:-2s}@-webkit-keyframes move-forever1{0%{transform:translate(85px,0%)}100%{transform:translate(-90px,0%)}}@keyframes move-forever1{0%{transform:translate(85px,0%)}100%{transform:translate(-90px,0%)}}@-webkit-keyframes move-forever2{0%{transform:translate(-90px,0%)}100%{transform:translate(85px,0%)}}@keyframes move-forever2{0%{transform:translate(-90px,0%)}100%{transform:translate(85px,0%)}}@-webkit-keyframes move-forever3{0%{transform:translate(-90px,0%)}100%{transform:translate(85px,0%)}}@keyframes move-forever3{0%{transform:translate(-90px,0%)}100%{transform:translate(85px,0%)}}section{padding:60px 0;overflow:hidden}.section-bg{background-color:#f5f5ff}.section-title{padding-bottom:40px}.section-title h2{font-size:14px;font-weight:500;padding:0;line-height:1px;margin:0 0 5px 0;letter-spacing:2px;text-transform:uppercase;color:#aaa;font-family:"Poppins",sans-serif}.section-title h2::after{content:"";width:120px;height:1px;display:inline-block;background:#1acc8d;margin:4px 10px}.section-title p{margin:0;margin:0;font-size:36px;font-weight:700;text-transform:uppercase;font-family:"Poppins",sans-serif;color:#010483}.breadcrumbs{padding:20px 0;background-color:#fafaff;min-height:40px;margin-top:80px}@media(max-width:992px){.breadcrumbs{margin-top:64px}}.breadcrumbs h2{font-size:24px;font-weight:400;margin:0}@media(max-width:992px){.breadcrumbs h2{margin:0 0 10px 0}}.breadcrumbs ol{display:flex;flex-wrap:wrap;list-style:none;padding:0;margin:0;font-size:14px}.breadcrumbs ol li+li{padding-left:10px}.breadcrumbs ol li+li::before{display:inline-block;padding-right:10px;color:#6c757d;content:"/"}@media(max-width:768px){.breadcrumbs .d-flex{display:block!important}.breadcrumbs ol{display:block}.breadcrumbs ol li{display:inline-block}}.about{padding:40px 0 0 0}.about .icon-boxes h3{font-size:28px;font-weight:700;color:#010483;margin-bottom:15px}.about .icon-box{margin-top:40px}.about .icon-box .icon{float:left;display:flex;align-items:center;justify-content:center;width:64px;height:64px;border:2px solid #7ceec6;border-radius:50px;transition:.5s}.about .icon-box .icon i{color:#1acc8d;font-size:32px}.about .icon-box:hover .icon{background:#1acc8d;border-color:#1acc8d}.about .icon-box:hover .icon i{color:#fff}.about .icon-box .title{margin-left:85px;font-weight:700;margin-bottom:10px;font-size:18px}.about .icon-box .title a{color:#2c91f7;transition:.3s}.about .icon-box .title a:hover{color:#1acc8d}.about .icon-box .description{margin-left:85px;line-height:24px;font-size:14px}.about .video-box{background:url("../img/about.png") center center no-repeat;background-size:contain;min-height:300px}.about .play-btn{width:94px;height:94px;background:radial-gradient(#3f43fd 50%,rgba(63,67,253,0.4) 52%);border-radius:50%;display:block;position:absolute;left:calc(50% - 47px);top:calc(50% - 47px);overflow:hidden}.about .play-btn::after{content:'';position:absolute;left:50%;top:50%;transform:translateX(-40%) translateY(-50%);width:0;height:0;border-top:10px solid transparent;border-bottom:10px solid transparent;border-left:15px solid #fff;z-index:100;transition:all 400ms cubic-bezier(0.55,0.055,0.675,0.19)}.about .play-btn::before{content:'';position:absolute;width:120px;height:120px;-webkit-animation-delay:0s;animation-delay:0s;-webkit-animation:pulsate-btn 2s;animation:pulsate-btn 2s;-webkit-animation-direction:forwards;animation-direction:forwards;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-timing-function:steps;animation-timing-function:steps;opacity:1;border-radius:50%;border:5px solid rgba(63,67,253,0.7);top:-15%;left:-15%;background:rgba(198,16,0,0)}.about .play-btn:hover::after{border-left:15px solid #3f43fd;transform:scale(20)}.about .play-btn:hover::before{content:'';position:absolute;left:50%;top:50%;transform:translateX(-40%) translateY(-50%);width:0;height:0;border:0;border-top:10px solid transparent;border-bottom:10px solid transparent;border-left:15px solid #fff;z-index:200;-webkit-animation:none;animation:none;border-radius:0}@-webkit-keyframes pulsate-btn{0%{transform:scale(0.6,0.6);opacity:1}100%{transform:scale(1,1);opacity:0}}@keyframes pulsate-btn{0%{transform:scale(0.6,0.6);opacity:1}100%{transform:scale(1,1);opacity:0}}.features .icon-box{display:flex;align-items:center;padding:20px;background:#f5f5ff;transition:ease-in-out .3s}.features .icon-box i{font-size:32px;padding-right:10px;line-height:1}.features .icon-box h3{font-weight:700;margin:0;padding:0;line-height:1;font-size:16px}.features .icon-box h3 a{color:#010483;transition:ease-in-out .3s}.features .icon-box h3 a:hover{color:#01036f}.features .icon-box:hover{background:#acd0f8}.features .feture-tabs .tab-content h4{font-size:18px;margin:0;font-weight:700;color:#68c3ec}.features .feture-tabs .tab-content i{font-size:24px;line-height:0;margin-right:8px;color:#4154f1}.features .feature-icons{margin-top:120px}.features .feature-icons h3{color:#012970;font-weight:700;font-size:32px;margin-bottom:20px;text-align:center}@media(max-width:768px){.features .feature-icons h3{font-size:28px}}.features .feature-icons .content .icon-box{display:flex}.features .feature-icons .content .icon-box h4{font-size:20px;font-weight:700;margin:0 0 10px 0;color:#012970}.features .feature-icons .content .icon-box i{font-size:44px;line-height:44px;color:#0245bc;margin-right:15px}.features .feature-icons .content .icon-box p{font-size:15px;color:#3d17e7}.Resort{background:#ddf3fc;padding:70px 0 60px}.Resort{padding:80px 0;background:url("../img/deds.webp") no-repeat;background-position:center center;background-size:cover;position:relative}.counts{background:#3838e9;padding:70px 0 60px}.counts .count-box{padding:30px 30px 25px 30px;width:100%;position:relative;text-align:center;background:#fff}.counts .count-box i{position:absolute;top:-25px;left:50%;transform:translateX(-50%);font-size:20px;background:#1acc8d;padding:12px;color:#fff;border-radius:50px;display:inline-flex;align-items:center;justify-content:center;line-height:0;width:48px;height:48px}.counts .count-box span{font-size:36px;display:block;font-weight:600;color:#010483}.counts .count-box p{padding:0;margin:0;font-family:"Montserrat",sans-serif;font-size:14px}.details .content+.content{margin-top:100px}.details .content h3{font-weight:600;font-size:26px;color:#010483}.details .content ul{list-style:none;padding:0}.details .content ul li{padding-bottom:10px}.details .content ul i{font-size:20px;padding-right:4px;color:#1acc8d}.details .content p:last-child{margin-bottom:0}.gallery .gallery-item{overflow:hidden;border-right:3px solid #fff;border-bottom:3px solid #fff}.gallery .gallery-item img{transition:all ease-in-out .4s}.gallery .gallery-item:hover img{transform:scale(1.1)}.testimonials{padding:80px 0;background:url("../img/testim.webp") no-repeat;background-position:center center;background-size:cover;position:relative}.testimonials::before{content:"";position:absolute;left:0;right:0;top:0;bottom:0;background:rgba(1,3,111,0.8)}.testimonials .section-header{margin-bottom:40px}.testimonials .testimonial-item{text-align:center;color:#fff}.testimonials .testimonial-item .testimonial-img{width:100px;border-radius:50%;border:6px solid rgba(255,255,255,0.15);margin:0 auto}.testimonials .testimonial-item h3{font-size:20px;font-weight:bold;margin:10px 0 5px 0;color:#fff}.testimonials .testimonial-item h4{font-size:14px;color:#ddd;margin:0 0 15px 0}.testimonials .testimonial-item .quote-icon-left,.testimonials .testimonial-item .quote-icon-right{color:rgba(255,255,255,0.4);font-size:26px}.testimonials .testimonial-item .quote-icon-left{display:inline-block;left:-5px;position:relative}.testimonials .testimonial-item .quote-icon-right{display:inline-block;right:-5px;position:relative;top:10px}.testimonials .testimonial-item p{font-style:italic;margin:0 auto 15px auto;color:#eee}.testimonials .swiper-pagination{margin-top:20px;position:relative}.testimonials .swiper-pagination .swiper-pagination-bullet{width:12px;height:12px;opacity:1;background-color:rgba(255,255,255,0.4)}.testimonials .swiper-pagination .swiper-pagination-bullet-active{background-color:#1acc8d}@media(min-width:1024px){.testimonials{background-attachment:fixed}}@media(min-width:992px){.testimonials .testimonial-item p{width:80%}}.team{background:#fff}.team .member{text-align:center;margin-bottom:80px;position:relative}.team .member .pic{border-radius:4px;overflow:hidden}.team .member img{transition:all ease-in-out .4s}.team .member:hover img{transform:scale(1.1)}.team .member .member-info{position:absolute;bottom:-80px;left:0;right:0;background:rgba(255,255,255,0.9);padding:15px 0;border-radius:0 0 4px 4px;box-shadow:0 2px 15px rgba(0,0,0,0.1)}.team .member h4{font-weight:700;margin-bottom:10px;font-size:16px;color:#01036f;position:relative;padding-bottom:10px}.team .member h4::after{content:'';position:absolute;display:block;width:50px;height:1px;background:#0d12fc;bottom:0;left:calc(50% - 25px)}.team .member span{font-style:italic;display:block;font-size:13px;color:#01036f}.team .member .social{margin-top:10px}.team .member .social a{transition:color .3s;color:#01036f}.team .member .social a:hover{color:#1acc8d}.team .member .social i{font-size:16px;margin:0 2px}.pricing .box{padding:20px;background:#fff;text-align:center;box-shadow:0 0 4px rgba(0,0,0,0.12);border-radius:5px;position:relative;overflow:hidden}.pricing h3{font-weight:400;margin:-20px -20px 20px -20px;padding:20px 15px;font-size:16px;font-weight:600;color:#777;background:#f8f8f8}.pricing h4{font-size:36px;color:#1acc8d;font-weight:600;font-family:"Poppins",sans-serif;margin-bottom:20px}.pricing h4 sup{font-size:20px;top:-15px;left:-3px}.pricing h4 span{color:#bababa;font-size:16px;font-weight:300}.pricing ul{padding:0;list-style:none;color:#444;text-align:center;line-height:20px;font-size:14px}.pricing ul li{padding-bottom:16px}.pricing ul i{color:#1acc8d;font-size:18px;padding-right:4px}.pricing ul .na{color:#ccc;text-decoration:line-through}.pricing .btn-wrap{margin:20px -20px -20px -20px;padding:20px 15px;background:#f8f8f8;text-align:center}.pricing .btn-buy{background:#1acc8d;display:inline-block;padding:8px 35px 10px 35px;border-radius:50px;color:#fff;transition:none;font-size:14px;font-weight:400;font-family:"Montserrat",sans-serif;font-weight:600;transition:.3s}.pricing .btn-buy:hover{background:#149f6e}.pricing .featured h3{color:#fff;background:#1acc8d}.pricing .advanced{width:100px;position:absolute;top:18px;right:-68px;transform:rotate(45deg);z-index:1;font-size:14px;padding:1px 0 3px 0;background:#1acc8d;color:#fff}#supply{font-size:1rem;margin-top:1rem}#launch-para{font-size:.75rem;font-weight:700;color:#1b0d5c}#launch-pool{font-size:.75rem;font-weight:700;color:#051f1b;margin-top:1rem;margin-bottom:1rem}#chartdiv{width:100%;height:300px}#Tokenomics-header{display:flex;justify-content:center;font-size:3.2rem;font-weight:700;margin-bottom:3rem;margin-top:3rem}.faq .faq-list{padding:0}.faq .faq-list ul{padding:0;list-style:none}.faq .faq-list li+li{margin-top:15px}.faq .faq-list li{padding:20px;background:#fff;border-radius:4px;position:relative}.faq .faq-list a{display:block;position:relative;font-family:"Poppins",sans-serif;font-size:16px;line-height:24px;font-weight:500;padding:0 30px;outline:0;cursor:pointer}.faq .faq-list .icon-help{font-size:24px;position:absolute;right:0;left:20px;color:#000dc0}.faq .faq-list .icon-show,.faq .faq-list .icon-close{font-size:24px;position:absolute;right:0;top:0}.faq .faq-list p{margin-bottom:0;padding:10px 0 0 0}.faq .faq-list .icon-show{display:none}.faq .faq-list a.collapsed{color:#343a40}.faq .faq-list a.collapsed:hover{color:#73ccff}.faq .faq-list a.collapsed .icon-show{display:inline-block}.faq .faq-list a.collapsed .icon-close{display:none}@media(max-width:1200px){.faq .faq-list{padding:0}}.contact .info{width:100%;background:#fff}.contact .info i{font-size:20px;color:#3f43fd;float:left;width:44px;height:44px;background:#f0f0ff;display:flex;justify-content:center;align-items:center;border-radius:50px;transition:all .3s ease-in-out}.contact .info h4{padding:0 0 0 60px;font-size:22px;font-weight:600;margin-bottom:5px;color:#010483}.contact .info p{padding:0 0 0 60px;margin-bottom:0;font-size:14px;color:#0205a1}.contact .info .email,.contact .info .phone{margin-top:40px}.contact .info .email:hover i,.contact .info .address:hover i,.contact .info .phone:hover i{background:#1acc8d;color:#fff}.contact .php-email-form{width:100%;background:#fff}.contact .php-email-form .form-group{padding-bottom:8px}.contact .php-email-form .error-message{display:none;color:#fff;background:#ed3c0d;text-align:left;padding:15px;font-weight:600}.contact .php-email-form .error-message br+br{margin-top:25px}.contact .php-email-form .sent-message{display:none;color:#fff;background:#18d26e;text-align:center;padding:15px;font-weight:600}.contact .php-email-form .loading{display:none;background:#fff;text-align:center;padding:15px}.contact .php-email-form .loading:before{content:"";display:inline-block;border-radius:50%;width:24px;height:24px;margin:0 10px -6px 0;border:3px solid #18d26e;border-top-color:#eee;-webkit-animation:animate-loading 1s linear infinite;animation:animate-loading 1s linear infinite}.contact .php-email-form input,.contact .php-email-form textarea{border-radius:0;box-shadow:none;font-size:14px}.contact .php-email-form input{height:44px}.contact .php-email-form textarea{padding:10px 12px}.contact .php-email-form button[type="submit"]{background:#1acc8d;border:0;padding:10px 30px;color:#fff;transition:.4s;border-radius:50px}.contact .php-email-form button[type="submit"]:hover{background:#34e5a6}@-webkit-keyframes animate-loading{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}@keyframes animate-loading{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}#footer{background:#010351;padding:0 0 30px 0;color:#fff;font-size:14px}#footer .footer-top{padding:60px 0 30px 0}#footer .footer-top .footer-info{margin-bottom:15px;background:#010246;color:#fff;border-top:4px solid #1acc8d;text-align:center;padding:30px 20px}#footer .footer-top .footer-info h3{font-size:24px;margin:0 0 20px 0;padding:2px 0 2px 0;line-height:1;font-weight:700}#footer .footer-top .footer-info p{font-size:14px;line-height:24px;margin-bottom:0;font-family:"Montserrat",sans-serif}#footer .footer-top .social-links a{font-size:18px;display:inline-block;color:#fff;line-height:1;padding:8px 0;margin-right:4px;border-radius:50%;text-align:center;width:36px;height:36px;transition:.3s}#footer .footer-top .social-links a:hover{background:#1acc8d;color:#fff;text-decoration:none}#footer .footer-top h4{font-size:16px;font-weight:600;color:#fff;position:relative;padding-bottom:12px}#footer .footer-top .footer-links{margin-bottom:30px}#footer .footer-top .footer-links ul{list-style:none;padding:0;margin:0}#footer .footer-top .footer-links ul i{padding-right:2px;color:#61ebba;font-size:18px;line-height:1}#footer .footer-top .footer-links ul li{padding:10px 0;display:flex;align-items:center}#footer .footer-top .footer-links ul li:first-child{padding-top:0}#footer .footer-top .footer-links ul a{color:#fff;transition:.3s;display:inline-block;line-height:1}#footer .footer-top .footer-links ul a:hover{color:#4be8b0}#footer .footer-top .footer-newsletter form{margin-top:30px;background:#fff;padding:6px 10px 6px 15px;position:relative;border-radius:50px}#footer .footer-top .footer-newsletter form input[type="email"]{border:0;padding:4px;width:calc(100% - 110px)}#footer .footer-top .footer-newsletter form input[type="submit"]{position:absolute;top:0;right:-2px;bottom:0;border:0;background:0;font-size:16px;padding:0 20px;background:#1acc8d;color:#fff;transition:.3s;border-radius:50px}#footer .footer-top .footer-newsletter form input[type="submit"]:hover{background:#149f6e}#footer .copyright{border-top:1px solid #010479;text-align:center;padding-top:30px}#footer .credits{padding-top:10px;text-align:center;font-size:13px;color:#fff}@media(max-width:575px){#footer .footer-top .footer-info{margin:-20px 0 30px 0}}[data-aos][data-aos][data-aos-duration="50"],body[data-aos-duration="50"] [data-aos]{transition-duration:50ms}[data-aos][data-aos][data-aos-delay="50"],body[data-aos-delay="50"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="50"].aos-animate,body[data-aos-delay="50"] [data-aos].aos-animate{transition-delay:50ms}[data-aos][data-aos][data-aos-duration="100"],body[data-aos-duration="100"] [data-aos]{transition-duration:.1s}[data-aos][data-aos][data-aos-delay="100"],body[data-aos-delay="100"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="100"].aos-animate,body[data-aos-delay="100"] [data-aos].aos-animate{transition-delay:.1s}[data-aos][data-aos][data-aos-duration="150"],body[data-aos-duration="150"] [data-aos]{transition-duration:.15s}[data-aos][data-aos][data-aos-delay="150"],body[data-aos-delay="150"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="150"].aos-animate,body[data-aos-delay="150"] [data-aos].aos-animate{transition-delay:.15s}[data-aos][data-aos][data-aos-duration="200"],body[data-aos-duration="200"] [data-aos]{transition-duration:.2s}[data-aos][data-aos][data-aos-delay="200"],body[data-aos-delay="200"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="200"].aos-animate,body[data-aos-delay="200"] [data-aos].aos-animate{transition-delay:.2s}[data-aos][data-aos][data-aos-duration="250"],body[data-aos-duration="250"] [data-aos]{transition-duration:.25s}[data-aos][data-aos][data-aos-delay="250"],body[data-aos-delay="250"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="250"].aos-animate,body[data-aos-delay="250"] [data-aos].aos-animate{transition-delay:.25s}[data-aos][data-aos][data-aos-duration="300"],body[data-aos-duration="300"] [data-aos]{transition-duration:.3s}[data-aos][data-aos][data-aos-delay="300"],body[data-aos-delay="300"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="300"].aos-animate,body[data-aos-delay="300"] [data-aos].aos-animate{transition-delay:.3s}[data-aos][data-aos][data-aos-duration="350"],body[data-aos-duration="350"] [data-aos]{transition-duration:.35s}[data-aos][data-aos][data-aos-delay="350"],body[data-aos-delay="350"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="350"].aos-animate,body[data-aos-delay="350"] [data-aos].aos-animate{transition-delay:.35s}[data-aos][data-aos][data-aos-duration="400"],body[data-aos-duration="400"] [data-aos]{transition-duration:.4s}[data-aos][data-aos][data-aos-delay="400"],body[data-aos-delay="400"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="400"].aos-animate,body[data-aos-delay="400"] [data-aos].aos-animate{transition-delay:.4s}[data-aos][data-aos][data-aos-duration="450"],body[data-aos-duration="450"] [data-aos]{transition-duration:.45s}[data-aos][data-aos][data-aos-delay="450"],body[data-aos-delay="450"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="450"].aos-animate,body[data-aos-delay="450"] [data-aos].aos-animate{transition-delay:.45s}[data-aos][data-aos][data-aos-duration="500"],body[data-aos-duration="500"] [data-aos]{transition-duration:.5s}[data-aos][data-aos][data-aos-delay="500"],body[data-aos-delay="500"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="500"].aos-animate,body[data-aos-delay="500"] [data-aos].aos-animate{transition-delay:.5s}[data-aos][data-aos][data-aos-duration="550"],body[data-aos-duration="550"] [data-aos]{transition-duration:.55s}[data-aos][data-aos][data-aos-delay="550"],body[data-aos-delay="550"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="550"].aos-animate,body[data-aos-delay="550"] [data-aos].aos-animate{transition-delay:.55s}[data-aos][data-aos][data-aos-duration="600"],body[data-aos-duration="600"] [data-aos]{transition-duration:.6s}[data-aos][data-aos][data-aos-delay="600"],body[data-aos-delay="600"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="600"].aos-animate,body[data-aos-delay="600"] [data-aos].aos-animate{transition-delay:.6s}[data-aos][data-aos][data-aos-duration="650"],body[data-aos-duration="650"] [data-aos]{transition-duration:.65s}[data-aos][data-aos][data-aos-delay="650"],body[data-aos-delay="650"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="650"].aos-animate,body[data-aos-delay="650"] [data-aos].aos-animate{transition-delay:.65s}[data-aos][data-aos][data-aos-duration="700"],body[data-aos-duration="700"] [data-aos]{transition-duration:.7s}[data-aos][data-aos][data-aos-delay="700"],body[data-aos-delay="700"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="700"].aos-animate,body[data-aos-delay="700"] [data-aos].aos-animate{transition-delay:.7s}[data-aos][data-aos][data-aos-duration="750"],body[data-aos-duration="750"] [data-aos]{transition-duration:.75s}[data-aos][data-aos][data-aos-delay="750"],body[data-aos-delay="750"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="750"].aos-animate,body[data-aos-delay="750"] [data-aos].aos-animate{transition-delay:.75s}[data-aos][data-aos][data-aos-duration="800"],body[data-aos-duration="800"] [data-aos]{transition-duration:.8s}[data-aos][data-aos][data-aos-delay="800"],body[data-aos-delay="800"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="800"].aos-animate,body[data-aos-delay="800"] [data-aos].aos-animate{transition-delay:.8s}[data-aos][data-aos][data-aos-duration="850"],body[data-aos-duration="850"] [data-aos]{transition-duration:.85s}[data-aos][data-aos][data-aos-delay="850"],body[data-aos-delay="850"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="850"].aos-animate,body[data-aos-delay="850"] [data-aos].aos-animate{transition-delay:.85s}[data-aos][data-aos][data-aos-duration="900"],body[data-aos-duration="900"] [data-aos]{transition-duration:.9s}[data-aos][data-aos][data-aos-delay="900"],body[data-aos-delay="900"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="900"].aos-animate,body[data-aos-delay="900"] [data-aos].aos-animate{transition-delay:.9s}[data-aos][data-aos][data-aos-duration="950"],body[data-aos-duration="950"] [data-aos]{transition-duration:.95s}[data-aos][data-aos][data-aos-delay="950"],body[data-aos-delay="950"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="950"].aos-animate,body[data-aos-delay="950"] [data-aos].aos-animate{transition-delay:.95s}[data-aos][data-aos][data-aos-duration="1000"],body[data-aos-duration="1000"] [data-aos]{transition-duration:1s}[data-aos][data-aos][data-aos-delay="1000"],body[data-aos-delay="1000"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="1000"].aos-animate,body[data-aos-delay="1000"] [data-aos].aos-animate{transition-delay:1s}[data-aos][data-aos][data-aos-duration="1050"],body[data-aos-duration="1050"] [data-aos]{transition-duration:1.05s}[data-aos][data-aos][data-aos-delay="1050"],body[data-aos-delay="1050"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="1050"].aos-animate,body[data-aos-delay="1050"] [data-aos].aos-animate{transition-delay:1.05s}[data-aos][data-aos][data-aos-duration="1100"],body[data-aos-duration="1100"] [data-aos]{transition-duration:1.1s}[data-aos][data-aos][data-aos-delay="1100"],body[data-aos-delay="1100"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="1100"].aos-animate,body[data-aos-delay="1100"] [data-aos].aos-animate{transition-delay:1.1s}[data-aos][data-aos][data-aos-duration="1150"],body[data-aos-duration="1150"] [data-aos]{transition-duration:1.15s}[data-aos][data-aos][data-aos-delay="1150"],body[data-aos-delay="1150"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="1150"].aos-animate,body[data-aos-delay="1150"] [data-aos].aos-animate{transition-delay:1.15s}[data-aos][data-aos][data-aos-duration="1200"],body[data-aos-duration="1200"] [data-aos]{transition-duration:1.2s}[data-aos][data-aos][data-aos-delay="1200"],body[data-aos-delay="1200"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="1200"].aos-animate,body[data-aos-delay="1200"] [data-aos].aos-animate{transition-delay:1.2s}[data-aos][data-aos][data-aos-duration="1250"],body[data-aos-duration="1250"] [data-aos]{transition-duration:1.25s}[data-aos][data-aos][data-aos-delay="1250"],body[data-aos-delay="1250"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="1250"].aos-animate,body[data-aos-delay="1250"] [data-aos].aos-animate{transition-delay:1.25s}[data-aos][data-aos][data-aos-duration="1300"],body[data-aos-duration="1300"] [data-aos]{transition-duration:1.3s}[data-aos][data-aos][data-aos-delay="1300"],body[data-aos-delay="1300"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="1300"].aos-animate,body[data-aos-delay="1300"] [data-aos].aos-animate{transition-delay:1.3s}[data-aos][data-aos][data-aos-duration="1350"],body[data-aos-duration="1350"] [data-aos]{transition-duration:1.35s}[data-aos][data-aos][data-aos-delay="1350"],body[data-aos-delay="1350"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="1350"].aos-animate,body[data-aos-delay="1350"] [data-aos].aos-animate{transition-delay:1.35s}[data-aos][data-aos][data-aos-duration="1400"],body[data-aos-duration="1400"] [data-aos]{transition-duration:1.4s}[data-aos][data-aos][data-aos-delay="1400"],body[data-aos-delay="1400"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="1400"].aos-animate,body[data-aos-delay="1400"] [data-aos].aos-animate{transition-delay:1.4s}[data-aos][data-aos][data-aos-duration="1450"],body[data-aos-duration="1450"] [data-aos]{transition-duration:1.45s}[data-aos][data-aos][data-aos-delay="1450"],body[data-aos-delay="1450"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="1450"].aos-animate,body[data-aos-delay="1450"] [data-aos].aos-animate{transition-delay:1.45s}[data-aos][data-aos][data-aos-duration="1500"],body[data-aos-duration="1500"] [data-aos]{transition-duration:1.5s}[data-aos][data-aos][data-aos-delay="1500"],body[data-aos-delay="1500"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="1500"].aos-animate,body[data-aos-delay="1500"] [data-aos].aos-animate{transition-delay:1.5s}[data-aos][data-aos][data-aos-duration="1550"],body[data-aos-duration="1550"] [data-aos]{transition-duration:1.55s}[data-aos][data-aos][data-aos-delay="1550"],body[data-aos-delay="1550"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="1550"].aos-animate,body[data-aos-delay="1550"] [data-aos].aos-animate{transition-delay:1.55s}[data-aos][data-aos][data-aos-duration="1600"],body[data-aos-duration="1600"] [data-aos]{transition-duration:1.6s}[data-aos][data-aos][data-aos-delay="1600"],body[data-aos-delay="1600"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="1600"].aos-animate,body[data-aos-delay="1600"] [data-aos].aos-animate{transition-delay:1.6s}[data-aos][data-aos][data-aos-duration="1650"],body[data-aos-duration="1650"] [data-aos]{transition-duration:1.65s}[data-aos][data-aos][data-aos-delay="1650"],body[data-aos-delay="1650"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="1650"].aos-animate,body[data-aos-delay="1650"] [data-aos].aos-animate{transition-delay:1.65s}[data-aos][data-aos][data-aos-duration="1700"],body[data-aos-duration="1700"] [data-aos]{transition-duration:1.7s}[data-aos][data-aos][data-aos-delay="1700"],body[data-aos-delay="1700"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="1700"].aos-animate,body[data-aos-delay="1700"] [data-aos].aos-animate{transition-delay:1.7s}[data-aos][data-aos][data-aos-duration="1750"],body[data-aos-duration="1750"] [data-aos]{transition-duration:1.75s}[data-aos][data-aos][data-aos-delay="1750"],body[data-aos-delay="1750"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="1750"].aos-animate,body[data-aos-delay="1750"] [data-aos].aos-animate{transition-delay:1.75s}[data-aos][data-aos][data-aos-duration="1800"],body[data-aos-duration="1800"] [data-aos]{transition-duration:1.8s}[data-aos][data-aos][data-aos-delay="1800"],body[data-aos-delay="1800"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="1800"].aos-animate,body[data-aos-delay="1800"] [data-aos].aos-animate{transition-delay:1.8s}[data-aos][data-aos][data-aos-duration="1850"],body[data-aos-duration="1850"] [data-aos]{transition-duration:1.85s}[data-aos][data-aos][data-aos-delay="1850"],body[data-aos-delay="1850"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="1850"].aos-animate,body[data-aos-delay="1850"] [data-aos].aos-animate{transition-delay:1.85s}[data-aos][data-aos][data-aos-duration="1900"],body[data-aos-duration="1900"] [data-aos]{transition-duration:1.9s}[data-aos][data-aos][data-aos-delay="1900"],body[data-aos-delay="1900"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="1900"].aos-animate,body[data-aos-delay="1900"] [data-aos].aos-animate{transition-delay:1.9s}[data-aos][data-aos][data-aos-duration="1950"],body[data-aos-duration="1950"] [data-aos]{transition-duration:1.95s}[data-aos][data-aos][data-aos-delay="1950"],body[data-aos-delay="1950"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="1950"].aos-animate,body[data-aos-delay="1950"] [data-aos].aos-animate{transition-delay:1.95s}[data-aos][data-aos][data-aos-duration="2000"],body[data-aos-duration="2000"] [data-aos]{transition-duration:2s}[data-aos][data-aos][data-aos-delay="2000"],body[data-aos-delay="2000"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="2000"].aos-animate,body[data-aos-delay="2000"] [data-aos].aos-animate{transition-delay:2s}[data-aos][data-aos][data-aos-duration="2050"],body[data-aos-duration="2050"] [data-aos]{transition-duration:2.05s}[data-aos][data-aos][data-aos-delay="2050"],body[data-aos-delay="2050"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="2050"].aos-animate,body[data-aos-delay="2050"] [data-aos].aos-animate{transition-delay:2.05s}[data-aos][data-aos][data-aos-duration="2100"],body[data-aos-duration="2100"] [data-aos]{transition-duration:2.1s}[data-aos][data-aos][data-aos-delay="2100"],body[data-aos-delay="2100"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="2100"].aos-animate,body[data-aos-delay="2100"] [data-aos].aos-animate{transition-delay:2.1s}[data-aos][data-aos][data-aos-duration="2150"],body[data-aos-duration="2150"] [data-aos]{transition-duration:2.15s}[data-aos][data-aos][data-aos-delay="2150"],body[data-aos-delay="2150"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="2150"].aos-animate,body[data-aos-delay="2150"] [data-aos].aos-animate{transition-delay:2.15s}[data-aos][data-aos][data-aos-duration="2200"],body[data-aos-duration="2200"] [data-aos]{transition-duration:2.2s}[data-aos][data-aos][data-aos-delay="2200"],body[data-aos-delay="2200"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="2200"].aos-animate,body[data-aos-delay="2200"] [data-aos].aos-animate{transition-delay:2.2s}[data-aos][data-aos][data-aos-duration="2250"],body[data-aos-duration="2250"] [data-aos]{transition-duration:2.25s}[data-aos][data-aos][data-aos-delay="2250"],body[data-aos-delay="2250"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="2250"].aos-animate,body[data-aos-delay="2250"] [data-aos].aos-animate{transition-delay:2.25s}[data-aos][data-aos][data-aos-duration="2300"],body[data-aos-duration="2300"] [data-aos]{transition-duration:2.3s}[data-aos][data-aos][data-aos-delay="2300"],body[data-aos-delay="2300"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="2300"].aos-animate,body[data-aos-delay="2300"] [data-aos].aos-animate{transition-delay:2.3s}[data-aos][data-aos][data-aos-duration="2350"],body[data-aos-duration="2350"] [data-aos]{transition-duration:2.35s}[data-aos][data-aos][data-aos-delay="2350"],body[data-aos-delay="2350"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="2350"].aos-animate,body[data-aos-delay="2350"] [data-aos].aos-animate{transition-delay:2.35s}[data-aos][data-aos][data-aos-duration="2400"],body[data-aos-duration="2400"] [data-aos]{transition-duration:2.4s}[data-aos][data-aos][data-aos-delay="2400"],body[data-aos-delay="2400"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="2400"].aos-animate,body[data-aos-delay="2400"] [data-aos].aos-animate{transition-delay:2.4s}[data-aos][data-aos][data-aos-duration="2450"],body[data-aos-duration="2450"] [data-aos]{transition-duration:2.45s}[data-aos][data-aos][data-aos-delay="2450"],body[data-aos-delay="2450"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="2450"].aos-animate,body[data-aos-delay="2450"] [data-aos].aos-animate{transition-delay:2.45s}[data-aos][data-aos][data-aos-duration="2500"],body[data-aos-duration="2500"] [data-aos]{transition-duration:2.5s}[data-aos][data-aos][data-aos-delay="2500"],body[data-aos-delay="2500"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="2500"].aos-animate,body[data-aos-delay="2500"] [data-aos].aos-animate{transition-delay:2.5s}[data-aos][data-aos][data-aos-duration="2550"],body[data-aos-duration="2550"] [data-aos]{transition-duration:2.55s}[data-aos][data-aos][data-aos-delay="2550"],body[data-aos-delay="2550"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="2550"].aos-animate,body[data-aos-delay="2550"] [data-aos].aos-animate{transition-delay:2.55s}[data-aos][data-aos][data-aos-duration="2600"],body[data-aos-duration="2600"] [data-aos]{transition-duration:2.6s}[data-aos][data-aos][data-aos-delay="2600"],body[data-aos-delay="2600"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="2600"].aos-animate,body[data-aos-delay="2600"] [data-aos].aos-animate{transition-delay:2.6s}[data-aos][data-aos][data-aos-duration="2650"],body[data-aos-duration="2650"] [data-aos]{transition-duration:2.65s}[data-aos][data-aos][data-aos-delay="2650"],body[data-aos-delay="2650"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="2650"].aos-animate,body[data-aos-delay="2650"] [data-aos].aos-animate{transition-delay:2.65s}[data-aos][data-aos][data-aos-duration="2700"],body[data-aos-duration="2700"] [data-aos]{transition-duration:2.7s}[data-aos][data-aos][data-aos-delay="2700"],body[data-aos-delay="2700"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="2700"].aos-animate,body[data-aos-delay="2700"] [data-aos].aos-animate{transition-delay:2.7s}[data-aos][data-aos][data-aos-duration="2750"],body[data-aos-duration="2750"] [data-aos]{transition-duration:2.75s}[data-aos][data-aos][data-aos-delay="2750"],body[data-aos-delay="2750"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="2750"].aos-animate,body[data-aos-delay="2750"] [data-aos].aos-animate{transition-delay:2.75s}[data-aos][data-aos][data-aos-duration="2800"],body[data-aos-duration="2800"] [data-aos]{transition-duration:2.8s}[data-aos][data-aos][data-aos-delay="2800"],body[data-aos-delay="2800"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="2800"].aos-animate,body[data-aos-delay="2800"] [data-aos].aos-animate{transition-delay:2.8s}[data-aos][data-aos][data-aos-duration="2850"],body[data-aos-duration="2850"] [data-aos]{transition-duration:2.85s}[data-aos][data-aos][data-aos-delay="2850"],body[data-aos-delay="2850"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="2850"].aos-animate,body[data-aos-delay="2850"] [data-aos].aos-animate{transition-delay:2.85s}[data-aos][data-aos][data-aos-duration="2900"],body[data-aos-duration="2900"] [data-aos]{transition-duration:2.9s}[data-aos][data-aos][data-aos-delay="2900"],body[data-aos-delay="2900"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="2900"].aos-animate,body[data-aos-delay="2900"] [data-aos].aos-animate{transition-delay:2.9s}[data-aos][data-aos][data-aos-duration="2950"],body[data-aos-duration="2950"] [data-aos]{transition-duration:2.95s}[data-aos][data-aos][data-aos-delay="2950"],body[data-aos-delay="2950"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="2950"].aos-animate,body[data-aos-delay="2950"] [data-aos].aos-animate{transition-delay:2.95s}[data-aos][data-aos][data-aos-duration="3000"],body[data-aos-duration="3000"] [data-aos]{transition-duration:3s}[data-aos][data-aos][data-aos-delay="3000"],body[data-aos-delay="3000"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="3000"].aos-animate,body[data-aos-delay="3000"] [data-aos].aos-animate{transition-delay:3s}[data-aos][data-aos][data-aos-easing=linear],body[data-aos-easing=linear] [data-aos]{transition-timing-function:cubic-bezier(.25,.25,.75,.75)}[data-aos][data-aos][data-aos-easing=ease],body[data-aos-easing=ease] [data-aos]{transition-timing-function:ease}[data-aos][data-aos][data-aos-easing=ease-in],body[data-aos-easing=ease-in] [data-aos]{transition-timing-function:ease-in}[data-aos][data-aos][data-aos-easing=ease-out],body[data-aos-easing=ease-out] [data-aos]{transition-timing-function:ease-out}[data-aos][data-aos][data-aos-easing=ease-in-out],body[data-aos-easing=ease-in-out] [data-aos]{transition-timing-function:ease-in-out}[data-aos][data-aos][data-aos-easing=ease-in-back],body[data-aos-easing=ease-in-back] [data-aos]{transition-timing-function:cubic-bezier(.6,-.28,.735,.045)}[data-aos][data-aos][data-aos-easing=ease-out-back],body[data-aos-easing=ease-out-back] [data-aos]{transition-timing-function:cubic-bezier(.175,.885,.32,1.275)}[data-aos][data-aos][data-aos-easing=ease-in-out-back],body[data-aos-easing=ease-in-out-back] [data-aos]{transition-timing-function:cubic-bezier(.68,-.55,.265,1.55)}[data-aos][data-aos][data-aos-easing=ease-in-sine],body[data-aos-easing=ease-in-sine] [data-aos]{transition-timing-function:cubic-bezier(.47,0,.745,.715)}[data-aos][data-aos][data-aos-easing=ease-out-sine],body[data-aos-easing=ease-out-sine] [data-aos]{transition-timing-function:cubic-bezier(.39,.575,.565,1)}[data-aos][data-aos][data-aos-easing=ease-in-out-sine],body[data-aos-easing=ease-in-out-sine] [data-aos]{transition-timing-function:cubic-bezier(.445,.05,.55,.95)}[data-aos][data-aos][data-aos-easing=ease-in-quad],body[data-aos-easing=ease-in-quad] [data-aos]{transition-timing-function:cubic-bezier(.55,.085,.68,.53)}[data-aos][data-aos][data-aos-easing=ease-out-quad],body[data-aos-easing=ease-out-quad] [data-aos]{transition-timing-function:cubic-bezier(.25,.46,.45,.94)}[data-aos][data-aos][data-aos-easing=ease-in-out-quad],body[data-aos-easing=ease-in-out-quad] [data-aos]{transition-timing-function:cubic-bezier(.455,.03,.515,.955)}[data-aos][data-aos][data-aos-easing=ease-in-cubic],body[data-aos-easing=ease-in-cubic] [data-aos]{transition-timing-function:cubic-bezier(.55,.085,.68,.53)}[data-aos][data-aos][data-aos-easing=ease-out-cubic],body[data-aos-easing=ease-out-cubic] [data-aos]{transition-timing-function:cubic-bezier(.25,.46,.45,.94)}[data-aos][data-aos][data-aos-easing=ease-in-out-cubic],body[data-aos-easing=ease-in-out-cubic] [data-aos]{transition-timing-function:cubic-bezier(.455,.03,.515,.955)}[data-aos][data-aos][data-aos-easing=ease-in-quart],body[data-aos-easing=ease-in-quart] [data-aos]{transition-timing-function:cubic-bezier(.55,.085,.68,.53)}[data-aos][data-aos][data-aos-easing=ease-out-quart],body[data-aos-easing=ease-out-quart] [data-aos]{transition-timing-function:cubic-bezier(.25,.46,.45,.94)}[data-aos][data-aos][data-aos-easing=ease-in-out-quart],body[data-aos-easing=ease-in-out-quart] [data-aos]{transition-timing-function:cubic-bezier(.455,.03,.515,.955)}[data-aos^=fade][data-aos^=fade]{opacity:0;transition-property:opacity,transform}[data-aos^=fade][data-aos^=fade].aos-animate{opacity:1;transform:translateZ(0)}[data-aos=fade-up]{transform:translate3d(0,100px,0)}[data-aos=fade-down]{transform:translate3d(0,-100px,0)}[data-aos=fade-right]{transform:translate3d(-100px,0,0)}[data-aos=fade-left]{transform:translate3d(100px,0,0)}[data-aos=fade-up-right]{transform:translate3d(-100px,100px,0)}[data-aos=fade-up-left]{transform:translate3d(100px,100px,0)}[data-aos=fade-down-right]{transform:translate3d(-100px,-100px,0)}[data-aos=fade-down-left]{transform:translate3d(100px,-100px,0)}[data-aos^=zoom][data-aos^=zoom]{opacity:0;transition-property:opacity,transform}[data-aos^=zoom][data-aos^=zoom].aos-animate{opacity:1;transform:translateZ(0) scale(1)}[data-aos=zoom-in]{transform:scale(.6)}[data-aos=zoom-in-up]{transform:translate3d(0,100px,0) scale(.6)}[data-aos=zoom-in-down]{transform:translate3d(0,-100px,0) scale(.6)}[data-aos=zoom-in-right]{transform:translate3d(-100px,0,0) scale(.6)}[data-aos=zoom-in-left]{transform:translate3d(100px,0,0) scale(.6)}[data-aos=zoom-out]{transform:scale(1.2)}[data-aos=zoom-out-up]{transform:translate3d(0,100px,0) scale(1.2)}[data-aos=zoom-out-down]{transform:translate3d(0,-100px,0) scale(1.2)}[data-aos=zoom-out-right]{transform:translate3d(-100px,0,0) scale(1.2)}[data-aos=zoom-out-left]{transform:translate3d(100px,0,0) scale(1.2)}[data-aos^=slide][data-aos^=slide]{transition-property:transform}[data-aos^=slide][data-aos^=slide].aos-animate{transform:translateZ(0)}[data-aos=slide-up]{transform:translate3d(0,100%,0)}[data-aos=slide-down]{transform:translate3d(0,-100%,0)}[data-aos=slide-right]{transform:translate3d(-100%,0,0)}[data-aos=slide-left]{transform:translate3d(100%,0,0)}[data-aos^=flip][data-aos^=flip]{backface-visibility:hidden;transition-property:transform}[data-aos=flip-left]{transform:perspective(2500px) rotateY(-100deg)}[data-aos=flip-left].aos-animate{transform:perspective(2500px) rotateY(0)}[data-aos=flip-right]{transform:perspective(2500px) rotateY(100deg)}[data-aos=flip-right].aos-animate{transform:perspective(2500px) rotateY(0)}[data-aos=flip-up]{transform:perspective(2500px) rotateX(-100deg)}[data-aos=flip-up].aos-animate{transform:perspective(2500px) rotateX(0)}[data-aos=flip-down]{transform:perspective(2500px) rotateX(100deg)}[data-aos=flip-down].aos-animate{transform:perspective(2500px) rotateX(0)}
-
-
-
-
-
-    </style>
-
-
-
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <script  type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=61408ea9f7277c0019b0d71a&product=inline-share-buttons' async='async'></script>
-    <title>LongevityCoin- Long Coins,LONG,Cryptocurrency </title>
-    <meta content="PARTICIPATE IN FIRST LONGEVITY TOKEN a decentralized platform to manage your own longevity & affect on humanity’s Longevity, to get access through longevity marketplace to latest industry achievements & participate in their development LongevityCoin - first Cryptocurrency with an authentic health purpose for the humanity. Will create trust & security." name="description">
-    <meta content="LONG Coins" name="keywords">
-     <!-- Favicons --><link href="assets/img/FVCO.jpeg" rel="icon">
+  <title>LongevityCoin </title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=61408ea9f7277c0019b0d71a&product=inline-share-buttons" async="async"></script>
+  <!-- Favicons -->
+  <link href="assets/img/FVCO.jpeg" rel="icon">
   <link href="assets/img/FVCO.jpeg" rel="apple-touch-icon">
 
- 
+  
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css"  rel="stylesheet">
- 
-<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-<link href="assets/vendor/swiper/swiper-bundle.min.css"  rel="stylesheet">
-<link href="assets/vendor/remixicon/remixicon.css"  rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-<!-- Template Main CSS File -->
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 
   
-  <!-- Bootstrap -->
- 
-  <!-- Pie Chart code -->
-  <script async="async">
-  window.onload = function() {
-
-  var chart = new CanvasJS.Chart("chartContainer", {
-    animationEnabled: true,
-    title: {
-      text: "Percentage Breakdown"
-    },
-    data: [{
-      type: "pie",
-      startAngle: 240,
-      yValueFormatString: "##0.00\"%\"",
-      indexLabel: "{label} {y}",
-      dataPoints: [
-        {y: 20, label: "Founders and Advisors"},
-        {y: 10, label: "Developers"},
-        {y: 10, label: "Private Round"},
-        {y: 60, label: "Public Rounds(I,II,III)"}
-      ]
-    }]
-  });
-  chart.render();
-
-  }
-  </script>
-  <script src="https://canvasjs.com/assets/script/canvasjs.min.js">async</script>
-  
-
 </head>
 
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+  <header id="header" class="fixed-top d-flex align-items-center ">
     <div class="container d-flex align-items-center justify-content-between">
 
       <div class="logo">
         <h1><a href="index.html"><span>LongevityCoin</span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
-       <!-- <a href="index.html"><img src="assets/img/FVCO.jpeg" alt="" class="img-fluid"></a>-->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#pricing">Buy LONG Coins</a></li>
-          <li><a class="nav-link scrollto" href="inner-page.html">Private Sale</a></li>
-          <li><a class="nav-link scrollto" href="#Tokenomics">Tokenomics</a></li>
           
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> <span class="nav-label">Buy LONG</span> <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a class="getstarted scrollto" href="#BNB">Buy via BNB</a></li>
+              <li><a class="getstarted scrollto" href="#pricing">Buy via other Cryptocurrency</a></li>  
+              <li><a class="getstarted scrollto" href="#Whitepaper">Buy via Paypal</a></li>
+              </ul>
+          <li><a class="nav-link scrollto active" href="#refer">Refer</a></li>
           
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> <span class="nav-label">Donate</span> <span class="caret"></span></a>
             <ul class="dropdown-menu">
@@ -97,753 +61,466 @@ body{font-family:"Open Sans",sans-serif;color:#000}a{color:#1acc8d;text-decorati
               <li><a class="getstarted scrollto" href="https://www.paypal.com/donate?hosted_button_id=5G3HF223S3N4W">Donate via Paypal</a></li>  
             </ul>       
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+        <i class="bi bi-list mobile-nav-toggle"></i><!-- .navbar -->
 
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero">
-
-    <div class="container">
-      <div class="row justify-content-between">
-        <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
-          <div data-aos="zoom-out">
-            <h1>PARTICIPATE IN FIRST <span>LONGEVITY TOKEN</span></h1>
-             <h2>Revolutionary digital money system. Fast & most popular currency now you can control your longevity.</h2>
-            <div class="text-center text-lg-start">
-              <a href="#about" class="btn-get-started scrollto">Get Started</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
-          <img src="assets/img/ezgif.com-gif-maker (1).webp" class="img-fluid animated" alt="">
-        </div>
-      </div>
-    </div>
-
-    
-    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
-      <defs>
-        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
-      </defs>
-      <g class="wave1">
-        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
-      </g>
-      <g class="wave2">
-        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
-      </g>
-      <g class="wave3">
-        <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
-      </g>
-    </svg>
-  </section><!-- End Hero -->
-
   <main id="main">
 
-
-
-    
-   
-    <!-- ======= Pricing Section ======= -->
-    <section id="pricing" class="pricing">
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
       <div class="container">
 
-        <div class="section-title" data-aos="fade-up">
-          <h2>Pricing&Donate</h2>
-          <p>Buy LongevityCoin</p>
-        </div>
-
-        <div class="row" data-aos="fade-left">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="box" data-aos="zoom-in" data-aos-delay="100">
-              <h3>Donate via Crypto</h3>
-              <h4><sup></sup>We accept all<span></span></h4>
-              <ul>
-                <li>We accept all</li>
-                <li>Major crypto currency</li>
-                
-                <li class="na"></li>
-                <li class="na"></li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="https://commerce.coinbase.com/checkout/940111d6-1d9f-49b2-b294-e95d8258903a" class="btn-buy">Donate Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
-            <div class="box featured" data-aos="zoom-in" data-aos-delay="200">
-              <h3>Buy LongevityCoin</h3>
-              <h4><sup>$</sup>Pancake Swap<span></span></h4>
-              <ul>
-                <li>Trade LongevityCoin. No registration, no hassle.</li>
-                <li></li>
-                <li> On Pancake Swap</li>
-                <li></li>
-                <li class="na"></li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="https://pancakeswap.finance/swap?outputCurrency=0xF0a712De4DF370092167Bdc2B52150781cF41fc1" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
-            <div class="box" data-aos="zoom-in" data-aos-delay="400">
-              <span class="advanced">Advanced</span>
-              <h3>Add Liquidity</h3>
-              <h4><sup>To</sup>LONG Coin<span></span></h4>
-              <ul>
-                <li>Select LongevityCoin</li>
-                <li>OR</li>
-                <li>Enter the below adress manualy</li>
-                <li>0xF0a712De4DF370092167Bdc2B52150781cF41fc1</li>
-                <li>And add Liquidity</li>
-        
-               </ul>
-              <div class="btn-wrap">
-                <a href="https://pancakeswap.finance/add/0xF0a712De4DF370092167Bdc2B52150781cF41fc1/" class="btn-buy">Add Now</a>
-              </div>
-            </div>
-          </div>
-        
-          <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
-            <div class="box featured" data-aos="zoom-in" data-aos-delay="200">
-              <h3>Donate via Paypal</h3>
-              <h4><sup></sup>Donate Through Paypal or Credit Card<span></span></h4>
-              
-              <div class="btn-wrap">
-                <a href="https://www.paypal.com/donate?hosted_button_id=5G3HF223S3N4W" class="btn-buy">Donate Now</a>
-              </div>
-            </div>
-          </div>
-           </div>
-
-      </div>
-    </section><!-- End Pricing Section -->
-
- <!-- ======= TOKENOMICS ======= -->
-    <section id="Tokenomics" class="Tokenomics">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2></h2>
-          <p style="margin-bottom: 4rem;">Tokenomics</p>
-          <div class="container-fluid padding" style="margin-bottom: 3rem;">
-            <div class="row text-center padding">
-                <div class="col-md-6" id="supply-div">
-                    <h3 style="font-weight: 800; ">Supply</h3>
-                    <p></p>
-                    <p id="supply">1 Trillion Tokens</p>
-                    <p id="launch-para">Launchpad Offering: 1B tokens for $2M </p>
-                    <p id ="launch-pool">Buy services and products<br>
-                       in the Longevity Marketspace <br></p>
-                    <a href="https://play.google.com/store/apps/details?id=com.application.bmiobesity&hl=en_IN&gl=US"
-                    target="_blank" style="margin-right: 8px;">
-                      <i class="fa fa-android" style="font-size:24px"></i>
-                    </a>
-                    <a href="https://apps.apple.com/us/app/antiobesity/id1511198472"
-                    target="_blank">
-                      <i class="fa fa-apple" style="font-size:24px"></i>
-                    </a>
-                    <p></p>
-                    <a href="https://imgur.com/a/1FuLbV6" target="_blank">
-                      <button class="btn btn-primary" style="border-radius: 18px; margin-top: 3rem;">Allocation</button>    
-                    </a>
-                </div>
-                <div class="col-md-6">
-                    <div id="chartContainer" style="height: 300px; width: 100%;"></div>                
-                </div>
-              </div>
-          </div>
-        </div>
-        
-      </section> 
-<!-- End TOKENOMICS -->
-         <!-- ======= WHITEPAPER ======= -->
-        <section id="Whitepaper" class="Whitepaper">
-          <div class="container">
-    
-            <div class="section-title" data-aos="fade-up">
-              <h2></h2>
-              <p>Whitepaper</p>
-              <a href="https://drive.google.com/file/d/1E9ffukF0SMYSmR0TlzhMRf8IxcyMYFdT/view" id="coin-details"
-              target="_blank">
-              <button class="btn btn-lg btn-info">Download Whitepaper
-               <i class="bi bi-arrow-right"></i>
-              </button>
-            </div>
-    
-          </section>
-
-
-<!-- End WHITEPAPER -->
-<!--  Features Section -->
-<section id="features" class="features">
-  <div class="container">
-
-    <div class="section-title" data-aos="fade-up">
-      <h2>Use LONG Coins</h2>
-      <p>How can you use LONG coins</p>
-    </div>
-
-    <div class="row" data-aos="fade-left">
-      <div class="col-lg-3 col-md-4">
-        <div class="icon-box" data-aos="zoom-in" data-aos-delay="50">
-          <i class="ri-store-line" style="color: #ffbb2c;"></i>
-          <h3>Longevity InTime mobile apps</a></h3>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-        <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
-          <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
-          <h3>Longevity Marketplace services</a></h3>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-        <div class="icon-box" data-aos="zoom-in" data-aos-delay="150">
-          <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
-          <h3>Longevity Scientific Resort services</a></h3>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-        <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
-          <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
-          <h3>Gamification part for Reaching health Milestones</a></h3>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 mt-4">
-        <div class="icon-box" data-aos="zoom-in" data-aos-delay="250">
-          <i class="ri-database-2-line" style="color: #47aeff;"></i>
-          <h3>Support relevant Petitions</a></h3>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 mt-4">
-        <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
-          <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
-          <h3>Awards in Longevity Game</a></h3>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 mt-4">
-        <div class="icon-box" data-aos="zoom-in" data-aos-delay="350">
-          <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
-          <h3>Donate to Longevity Technologies</a></h3>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 mt-4">
-        <div class="icon-box" data-aos="zoom-in" data-aos-delay="350">
-          <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
-          <h3>B2B SAAS Products</a></h3>
-        </div>
-      </div>
-      
-      </div>
-        </div>
-      </div>
-      
-    </div>
-
-  </div>
-</section><!-- End Features Section -->
-
-
-
-
-
-<!-- ======= About Section ======= -->
-<section id="about" class="about">
-  <div class="section-title" data-aos="fade-up">
-    <h2>Longevity InTime</h2>
-    <p>Longevity InTime-TRACK EARLY Live Longer</p>
-    <a href="https://www.intime.digital/en/"></a>
-  </div>
-  <div class="container-fluid">
-
-    <div class="row">
-      <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch" data-aos="fade-right">
-        <iframe width="520" height="515"src="assets\img\videoplayback.webm?autoplay=1&mute=1"></iframe>
-        <a href="assets\img\videoplayback.webm?autoplay=1&mute=1" class="venobox" data-vbtype="video" data-autoplay="true"></a>
-      </iframe>
-      </div>
-
-      <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5" data-aos="fade-left">
-        <h3>Who we are</h3>
-        <p>Longevity InTime BioTech develops the real time technology of an online early stages Diseases diagnosis by measuring human biodata online. With a hardware, software & a Complex of devices we predict & prevent the severe diseases on the not known before Earliest stages, which can affect longevity.</p>
-
-        <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
-          <div class="icon"><i class="bx bx-fingerprint"></i></div>
-          <h4 class="title"><a href="https://www.intime.digital/en/">Mobile app - AI Health Check Up</a></h4>
-          <p class="description">The proprietary technology plans to analyze 400+ parameters of the physical state of the human body in real-time.</p>
-        </div>
-      
-        <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
-          <div class="icon"><i class="bx bx-gift"></i></div>
-          <h4 class="title"><a href="https://www.longevityscientificresort.com/"> Longevity Scientific Resort</a></h4>
-          <p class="description">A network of uninhabited island hotels across the mild climate territories around the world with a focus on longevity treatments and clinical trials. Besides the traditional standard package of services with spa, beauty, cosmetology, fitness we offer evidence-based longevity treatments and participation in breakthrough longevity clinical trials. There is a bigger chance to avoid early death if you will track your health by 1000+ parameters every quarter. That's why in the first Longevity Scientific Resort, which plans to open in the Maldives by the end of 2022 - Lifetime Health Tracking included.</p>
-        </div>
-      
-        <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
-          <div class="icon"><i class="bx bx-atom"></i></div>
-          <h4 class="title"><a href="https://www.intime.digital/en/">AI Powered Longevity & Anti-Aging SAAS Products</a></h4>
-          <p class="description">Proprietary methods involve: severe diseases prediction and prevention methods, structuring unstructured medical and health data, medical profiles anonymizing method, AI simulations of clinical trials.</p>
-        </div>
-      
-      </div>
-    </div>
-
-  </div>
-</section>
-    <!-- ======= Counts Section ======= -->
-    <section id="counts" class="counts">
-      <div class="container">
-
-        <div class="row" data-aos="fade-up">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="count-box">
-              <i class="bi bi-emoji-smile"></i>
-              <span data-purecounter-start="0" data-purecounter-end="70033" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Depersonalised Datasets</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
-            <div class="count-box">
-              <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="52100" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Telegram Members</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="count-box">
-              <i class="bi bi-headset"></i>
-              <span data-purecounter-start="0" data-purecounter-end="23000000" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Investments</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="count-box">
-              <i class="bi bi-people"></i>
-              <span data-purecounter-start="0" data-purecounter-end="97" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Team Members</p>
-            </div>
-          </div>
-
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Private Sale</h2>
         </div>
 
       </div>
-    </section><!-- End Counts Section -->
+    </section><!-- End Breadcrumbs Section -->
+                <!-- Begin Page Content -->
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
 
-    <!-- ======= Details Section ======= -->
-    <section id="details" class="details">
-      <div class="container">
-        <div class="section-title" data-aos="fade-up">
-          <h2>Apps</h2>
-          <p>AI Health Check Up</p>
-        </div>
-        <div class="row content">
-          <div class="col-md-4" data-aos="fade-right">
-            <img src="assets/img/app.webp" class="img-fluid" alt="">
-          </div>
-          <div class="col-md-8 pt-4" data-aos="fade-up">
-            <h3>Mobile app - AI Health Check Up.</h3>
-            <p class="fst-italic">
-              The proprietary technology plans to analyze 400+ parameters of the physical state of the human body in real-time. In mobile app and web account, the user receives personalized risks assessment report on the current and future health state, as well as personalized recommendations aimed at improving health condition in long term period.
-            </p>
-            <ul>
-              <li><i class="bi bi-check"></i> Gives recommendations how to bypass “hot spots”, which can develop severe diseases.</li>
-              <li><i class="bi bi-check"></i> Collects additional environmental & behavioral data from other user's apps, with user's Consent & gives better insights on the permanent changes of the wellbeing of the user.</li>
-              <li><i class="bi bi-check"></i> shows what to do with the results, - what they mean for the user’s health, in the user friendly way.</li>
-              
-            </ul>
-            <p>
-              With real-time display of the daily changing parameters of a person from aggregated data received from wearables, portable bio container, AI server & the ML algorithm.  </p>
-          </div>
-        </div>
-        </div>
-      </section>
-        <section id="Resort" class="Resort">
-          <div class="container">
-            <div class="section-title" data-aos="fade-up">
-              <h2>Resorts</h2>
-              <p>Longevity Scientific Resort</p>
-            </div>
+                  <!-- Page Heading -->
+                  <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                      <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+                      <div class="sharethis-inline-share-buttons"></div>                 </div>
 
-          <div class="row">
+                  <!-- Content Row -->
+                  <div class="row">
 
-            <div class="col-xl-4 text-center" data-aos="fade-right" data-aos-delay="100">
-              <img src="assets/img/feature.webp" class="img-fluid p-4" alt="">
-            </div>
+                      <!-- Earnings (Monthly) Card Example -->
+                      <div class="col-xl-3 col-md-6 mb-4">
+                          <div class="card border-left-primary shadow h-100 py-2">
+                              <div class="card-body">
+                                  <div class="row no-gutters align-items-center">
+                                      <div class="col mr-2">
+                                          <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                            LONG in Wallet</div>
+                                          <div class="h5 mb-0 font-weight-bold text-gray-800"><span id="myTokens"></div>
+                                      </div>
+                                      <div class="col-auto">
+                                          <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
 
-            <div class="col-xl-8 d-flex content">
-              <div class="row align-self-center gy-4">
+                      <!-- Earnings (Monthly) Card Example -->
+                      <div class="col-xl-3 col-md-6 mb-4">
+                          <div class="card border-left-success shadow h-100 py-2">
+                              <div class="card-body">
+                                  <div class="row no-gutters align-items-center">
+                                      <div class="col mr-2">
+                                          <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                              Contribution</div>
+                                          <div class="h5 mb-0 font-weight-bold text-gray-800"><span id="mySpendings"></div>
+                                      </div>
+                                      <div class="col-auto">
+                                          <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
 
-                <div class="col-md-6 icon-box" data-aos="fade-up">
-                  <i class="ri-line-chart-line"></i>
-                  <div>
-                    <h4>Work, creativity & intellectual development</h4>
-                    <p>Evidence based deep longevity treatments
-                      (Level 1,2) & trials (Level 3)
-                      with Mild climate all Year</p>
+                      <!-- Earnings (Monthly) Card Example -->
+                      <div class="col-xl-3 col-md-6 mb-4">
+                          <div class="card border-left-info shadow h-100 py-2">
+                              <div class="card-body">
+                                  <div class="row no-gutters align-items-center">
+                                      <div class="col mr-2">
+                                          <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Progress
+                                          </div>
+                                          <div class="row no-gutters align-items-center">
+                                              <div class="col-auto">
+                                                  <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800"></div>
+                                              </div>
+                                              <div class="col">
+                                                  <div class="progress progress-sm mr-2">
+                                                    
+                                                    <p><progress id="progress" value="0" max="100" style="width: 70%"></progress></p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="col-auto">
+                                          <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+                      <!-- Pending Requests Card Example -->
+                      <div class="col-xl-3 col-md-6 mb-4">
+                          <div class="card border-left-warning shadow h-100 py-2">
+                              <div class="card-body">
+                                  <div class="row no-gutters align-items-center">
+                                      <div class="col mr-2">
+                                          <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                                            Sale Ends</div>
+                                          <div class="h5 mb-0 font-weight-bold text-gray-800"><span id="endtimer"></span></div>
+                                      </div>
+                                      <div class="col-auto">
+                                          <i class="fas fa-comments fa-2x text-gray-300"></i>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
                   </div>
-                </div>
 
-                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-                  <i class="ri-stack-line"></i>
-                  <div>
-                    <h4>Social connections and Social recognition</h4>
-                    <p>The country’s best longevity-focused facility
-                      a Chance to become the trend setter in the
-                      world</p>
-                  </div>
-                </div>
-
-                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-                  <i class="ri-brush-4-line"></i>
-                  <div>
-                    <h4>World Class Health Facilities</h4>
-                    <p>Nutrition plan designed by leading longevity Scientists
-                      ▪ Fitness & spa. Standard resort Activities</p>
-                  </div>
-                </div>
-
-                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-                  <i class="ri-magic-line"></i>
-                  <div>
-                    <h4>Longevity clinical trials</h4>
-                    <p>Longevity treatments conducted by leading Scientists</p>
-                  </div>
-                </div>
-
-                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
-                  <i class="ri-command-line"></i>
-                  <div>
-                    <h4>Fitness & wellness activity</h4>
-                    <p>Family health tracking 1 month prior to visit,
-                      During the stay & lifetime after the stay
-                      using Proprietary technology</p>
-                  </div>
-                </div>
-
-                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
-                  <i class="ri-radar-line"></i>
-                  <div>
-                    <h4>Access only to designated customers</h4>
-                    <p>Proprietary Intensive Care Unit (ICU) & high
-                      end Diagnostics equipment</p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-
-        </div><!-- End Feature Icons -->
-
-      </div>
-
-    </section>
-    </section><!-- End Gallery Section -->
-
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
-      <div class="container">
-
-        <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/r1.webp" class="testimonial-img" alt="">
-                <h3>Paul Brite</h3>
-                <h4>Ceo &amp; Founder</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  This is the best app for checking our BMI. This app experiences more good as it allows the user to fill his or her height, weight, blood pressure, heart rate, glucose etc in any measuring unit. I would recommend to install it.</p>
-                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/r2.webp" class="testimonial-img" alt="">
-                <h3>Sara Jhonson</h3>
-                <h4>Designer</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  What I like the most about this app is how it gives you suggestion based on your weight, height and waist. It tells you how many steps you need to walk in order to lose weight. It also gives you suggestion about meal plans and gives you the amount calories you need to intake whether you want to lose weight or gain. Overall experience with this app is great. The UI could have been better. The onboarding was quicker than I expected. Highly recommend.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/r3.webp" class="testimonial-img" alt="">
-                <h3>Jena Baker</h3>
-                <h4>Store Owner</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Great initiative but can be more attractive and user friendly. Overall the goal which is being target to be avhieved is awesome and surely the product has the true potetntial to boost in future. </p>
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/r4.webp" class="testimonial-img" alt="">
-                <h3>Matt Smith</h3>
-                <h4>Freelancer</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Good app. I love the recommendations in it, I follow them every day. My weight has become stable.<i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/r5.webp" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  This is a unique initiative for human race longevity, looking forward for the fully developed version  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section><!-- End Testimonials Section -->
-
-    <!-- ======= Team Section ======= -->
-    <section id="team" class="team">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>Team</h2>
-          <p>Our Great Team</p>
-        </div>
-
-        <div class="row" data-aos="fade-left">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="member" data-aos="zoom-in" data-aos-delay="100">
-              <div class="pic"><img src="https://media-exp1.licdn.com/dms/image/C5603AQF6JffCCjZM0w/profile-displayphoto-shrink_200_200/0/1587389555083?e=1635984000&v=beta&t=yN2kF1QRXeX-a78ye7Xf67LAvlXP1V_HOK8OZjG6V2g" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Oleg Teterin</h4>
-                <span>Chief Executive Officer</span>
-                <div class="social">
-                  <a href="https://twitter.com/TETERINOLEG"><i class="bi bi-twitter"></i></a>
-                  <a href="https://www.facebook.com/profile.php?id=100001294118438"><i class="bi bi-facebook"></i></a>
-                  <a href="https://www.instagram.com/teterinolegjr/"><i class="bi bi-instagram"></i></a>
-                  <a href="https://www.linkedin.com/in/olegteterin/"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
-            <div class="member" data-aos="zoom-in" data-aos-delay="200">
-              <div class="pic"><img src="assets/img/manager (2).webp" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Frank</h4>
-                <span>Product Manager</span>
-                <div class="social">
-                  <a href="#"><i class="bi bi-twitter"></i></a>
-                  <a href="#"><i class="bi bi-facebook"></i></a>
-                  <a href="#"><i class="bi bi-instagram"></i></a>
-                  <a href="https://www.linkedin.com/in/ifonedis/"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="member" data-aos="zoom-in" data-aos-delay="300">
-              <div class="pic"><img src="https://media-exp1.licdn.com/dms/image/C5603AQHy6OviVJKOHw/profile-displayphoto-shrink_200_200/0/1547026020529?e=1635984000&v=beta&t=ExIuSgj9vRLlIXd5ZOCGdlzX61PFb9FVRVevOyluqwk" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Vitaliy Kiselev</h4>
-                <span>CTO</span>
-                <div class="social">
-                  <a href="#"><i class="bi bi-twitter"></i></a>
-                  <a href="#"><i class="bi bi-facebook"></i></a>
-                  <a href="#"><i class="bi bi-instagram"></i></a>
-                  <a href="https://www.linkedin.com/in/vitalii-kisielov-486137178/"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="member" data-aos="zoom-in" data-aos-delay="400">
-              <div class="pic"><img src="assets/img/shubham.webp" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Shubham Dubey</h4>
-                <span>Crypto Development Lead</span>
-                <div class="social">
-                  <a href="#"><i class="bi bi-twitter"></i></a>
-                  <a href="#"><i class="bi bi-facebook"></i></a>
-                  <a href="#"><i class="bi bi-instagram"></i></a>
-                  <a href="#"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Team Section -->
-
-    
-
-    <!-- ======= F.A.Q Section ======= -->
-    <section id="faq" class="faq section-bg">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>F.A.Q</h2>
-          <p>Frequently Asked Questions</p>
-        </div>
-
-        <div class="faq-list">
-          <ul>
-            <li data-aos="fade-up">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1"> What is Longevity Coin? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
-                <p>
-                  LONG - official first LongevityCoin. Developed 1 July 2021
-
-                  A decentralized platform to manage your own longevity & affect on humanity’s Longevity, to get access
-                  through longevity marketplace to latest industry achievements & participate in their development
-                  LongevityCoin - first Cryptocurrency with an authentic health purpose for the humanity.
                   
-                  Will create trust & security.</p>
-              </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="100">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed"> Tokenomics of coin? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  It’s Binance Smart Chain BEP-20 coin.
-
-The total supply is 1 trillion (not minable) to be distributed as follows:
-60% three public rounds, 20% Founders, advisors, team, reserve, marketing team,
-10% one private round, 10% developers, growth initiatives, ecosystem, bounty hunters. </p>
-              </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="200">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed"> Can I invest in LongevityCoin? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  Yes, you can invest in the Long Token - the core of the Longeviy InTime technology platform. The LONG works as the reference currency for Long-Based tokens.   </p>
-              </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="300">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed"> What is the difference between Long Coin and other projects? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  There are 0 longevity & anti-aging tokens today,Besides petitions, investing in IPO & caring about themselves general population has 0 Opportunities to influence on their own longevity.
-                  </p>
-              </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed"> How can you use LONG coins?
-                <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  Longevity InTime mobile apps subscriptions,Longevity Marketplace services, Longevity Shop productsAwards in Longevity Game,Longevity Scientific Resort services and to Support relevant petitions </p>
-              </div>
-            </li>
-
-          </ul>
-        </div>
-
-      </div>
-    </section><!-- End F.A.Q Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>Contact</h2>
-          <p>Contact Us</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-4" data-aos="fade-right" data-aos-delay="100">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>300 Delaware Avenue, Suite 210-A <br>
-                  Wilmington, Delaware, USA, 19801</p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>support@longevitycoin.org</p>
-              </div>
-
-             
-
-            </div>
-
-          </div>
-
-          <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="200">
-
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  <!-- Content Row -->
+                  
+                  <script>
+                    var test = false; // False if contracts are on Mainnet
+                    var contractAddressSale = '0x0A921B519b43488c88949FC86Bc7C531B149Fed7';
+                    var contractAddressToken = '0xF0a712De4DF370092167Bdc2B52150781cF41fc1';
+                </script>
+                
+                <style>
+                    
+                    body {font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; color: #000000; background-color: #ffffff; font-size: 26px; font-weight: 400;}
+            
+                    h1 { font-size: 34px; font-weight: 700;color: rgb(0, 60, 255);}
+                    h2 { font-size: 22px; font-weight: 500;color: rgb(22, 0, 145);}
+            
+                    .small {
+                        font-size: 22px;
+                    }
+            
+                    .err {
+                         color: red;
+                    }
+                    
+                    .green {
+                         color: rgb(10, 178, 255);
+                    }
+                    
+                    .blue {
+                         color: blue;
+                    }
+            
+                    * {
+                      box-sizing: border-box;
+                    }
+                    
+                    a {
+                      color: #adceff;
+                      text-decoration: none;
+                    }
+                    
+                    a:hover {
+                      color: #002fff;
+                    }
+                    
+                    .clickable {
+                        cursor: pointer;
+                    }
+                    
+                    .clickable:hover {
+                        color: #9294ff;
+                    }
+                    
+                    button {
+                      background-color: #6ae4ff;
+                      border: none;
+                      border-radius: 2px;
+                      color: rgb(0, 0, 0);
+                      padding: 5px 20px;
+                      text-align: center;
+                      text-decoration: none;
+                      font-size: 26px;
+                      display: inline-block;
+                      margin: 4px 2px;
+                      cursor: pointer;
+                    }
+                    
+                    button:hover {
+                      background-color: #3177fa;
+                    }
+                    
+                    button[disabled] {
+                      opacity: 0.6;
+                      cursor: not-allowed;
+                    }
+                    
+                    hr {
+                        margin: 20px;
+                        border: 0;
+                        border-top: 1px dashed;
+                    }
+                    
+                    input {
+                      text-align: center;
+                      font-size: 28px;
+                      background-color: #ffffff;
+                      color: #000000;
+                      border:1px solid;
+                      max-width: 100%;
+                    }
+                </style>
+                
+            </head>
+            
+            <body>
+              <section id="BNB" class="BNB">
+                <div class="container">
+          
+                  <div class="section-title" data-aos="fade-up">
+                    <h2>Pricing</h2>
+                    <p>Buy LONG via BNB</p>
+                  </div>
+          
+                <div style="text-align: center">
+                    <button id="connect" style="font-size: 32px">Connect</button> <button class="switch" id="addMainBSC" style="font-size: 32px;">To BSC Mainnet</button>
+                    <span id="nometamask" class="err" style="display: none">Please install Metamask first...</span>
+                    <div class="network small"><span id="curnet"><span class="err">Please use DApp browser/extension (e.g. <a target="_blank" href="https://metamask.io">Metamask</a>)</span></span> <span id="myAddr"></span>
+                    <span id="referred" style="display:none"><br>Referrer: <span id="referrer"></span></span></div>
                 </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                
+                <div style="text-align: center">
+                    <h1>Token info</h1>
+                    <h2><span id="tokenName">LongevityCoin</span> (<span class="tokenSymbol">LONG</span>)</h2>
+                    <p><a target="_blank" href="https://bscscan.com/token/0xF0a712De4DF370092167Bdc2B52150781cF41fc1" id="tokenAddress"></a></p>
+                    <!-- Reserved in case you want to show decimals and total supply: Decimals <span id="#tokenDecimals"></span> Total supply <span id="#tokenSupply"></span>-->
+                    <p>Do not send BNB to the token contract!</p>
+                    <p><button id="addToken" style="text-align: center">Add to Metamask</button> <button id="copyToken" style="text-align: center">Copy address</button></p>
                 </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-
-          </div>
-
-        </div>
-
+                
+                <hr>
+                
+                
+                <div style="text-align: center">
+                    <h1>Buy tokens</h1>
+                    <p>1 BNB = <span class="rate"></span> <span class="tokenSymbol">LONG</span></p>
+                    <p><input type="number" id="buyAmount" value="0" min="0"> BNB</p>
+                    <p>You get: <span id="get">0</span> <span class="tokenSymbol">LONG</span></p>
+                    <p><button id="buyBtn" style="text-align: center">Buy</button></p>
+                    <p>You have contributed <span id="mySpendings">?</span> of <span class="max">?</span> BNB maximum purchase limit, 
+                    can spend max. <span id="myRemaining">?</span> BNB more</p>
+                    <p>In my wallet: <span id="myTokens"></span> <span class="tokenSymbol">LONG</span></p>
+                </div>
+                <hr>
+                
+                
+            <script src='https://dappbuilder.org/js/jquery-3.6.0.min.js' type="text/javascript" charset="utf-8"></script>
+            <script src='https://dappbuilder.org/js/ethers-5.0.umd.min.js' type="text/javascript" charset="utf-8"></script>
+            <script src='https://dappbuilder.org/bsc/tokensaletimerefadm/js/tokensale.ui.js' type="text/javascript" charset="utf-8"></script>
+         
+        
+                <section id="pricing" class="pricing">
+                  <div class="container">
+            
+                    <div class="section-title" data-aos="fade-up">
+                      <h2>Pricing</h2>
+                      <p>Buy LONG via Crypto</p>
+                    </div>
+            
+                    
+                <div class="row" data-aos="fade-left">
+        
+                  <div class="col-lg-3 col-md-6">
+                    <div class="box" data-aos="zoom-in" data-aos-delay="100">
+                      <h3>Buy via Crypto</h3>
+                      <h4><sup></sup>Accepted Crypto<span></span></h4>
+                      <ul>
+                        <li>1 Ethereum = 800000 LONG</li>
+                        <li>1 Bitcoin = 11000000 LONG</li>
+                        <li>1 Dai = 250 LONG</li>
+                        </ul>
+                      <div class="btn-wrap">
+                        <a href="https://commerce.coinbase.com/checkout/697ca0d0-5ee6-4d46-8e33-415dea620bf2" class="btn-buy">Buy Now</a>
+                      </div>
+                    </div>
+                  </div>
+                      <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
+                        <div class="box featured" data-aos="zoom-in" data-aos-delay="200">
+                          <h3>Buy via Crypto</h3>
+                          <h4><sup></sup>Accepted Crypto<span></span></h4>
+                          <ul>
+                            <li>1 Litecoin = 45000 LONG</li>
+                            <li>1 Bitcoin cash = 160000 LONG</li>
+                            <li>1 Dogecoin = 60 LONG</li>
+                            </ul>
+                          <div class="btn-wrap">
+                            <a href="https://commerce.coinbase.com/checkout/697ca0d0-5ee6-4d46-8e33-415dea620bf2" class="btn-buy">Buy Now</a>
+                              </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+                        <div class="box" data-aos="zoom-in" data-aos-delay="400">
+                          <span class="advanced"></span>
+                          <h3>Binance Wallet</h3>
+                          <h4><sup></sup>If paid through Crypto<span></span></h4>
+                          <ul>
+                            <li>Enter Binance smart chain wallet address to receive LONG</li>
+                    
+                           </ul>
+                          <div class="btn-wrap">
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdn3BhXNke5-btv_1n5dlFSCA-2YwX2UG95rK8CXlHRQEsgUA/viewform?usp=sf_link" class="btn-buy">Fill Now</a>
+                          </div>
+                        </div>
+                      </div>
+                    
+                      <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
+                        <div class="box featured" data-aos="zoom-in" data-aos-delay="200">
+                          <h3>Binance Wallet</h3>
+                          <h4><sup></sup>If paid through Paypal<span></span></h4>
+                          <ul>
+                            <li>Enter Binance smart chain wallet address to receive LONG</li>
+                    
+                           </ul>
+                          <div class="btn-wrap">
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdn3BhXNke5-btv_1n5dlFSCA-2YwX2UG95rK8CXlHRQEsgUA/viewform?usp=sf_link" class="btn-buy">Fill Now</a>
+                          </div>
+                        </div>
+                      </div>
+                       </div>
+            
+                  </div>
+                </section><!-- End Pricing Section -->
+                <section id="Whitepaper" class="Whitepaper">
+                  <div class="container">
+            
+                    <div class="section-title" data-aos="fade-up">
+                      <h2></h2>
+                      <p>Buy through Paypal</p></div>
+                      <div id="smart-button-container">
+                        <div style="text-align: center;">
+                          <div style="margin-bottom: 1.25rem;">
+                            <p>After Payment please fill in the above Form</p>
+                            <select id="item-options"><option value="2500 LongevityCoin(LONG)" price="10">2500 LongevityCoin(LONG) - 10 USD</option><option value="30000 LongevityCoin(LONG)" price="100">30000 LongevityCoin(LONG) - 100 USD</option><option value="350000 LongevityCoin(LONG)" price="1000">350000 LongevityCoin(LONG) - 1000 USD</option></select>
+                            <select style="visibility: hidden" id="quantitySelect"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option><option value="41">41</option><option value="42">42</option><option value="43">43</option><option value="44">44</option><option value="45">45</option><option value="46">46</option><option value="47">47</option><option value="48">48</option><option value="49">49</option><option value="50">50</option><option value="51">51</option><option value="52">52</option><option value="53">53</option><option value="54">54</option><option value="55">55</option><option value="56">56</option><option value="57">57</option><option value="58">58</option><option value="59">59</option><option value="60">60</option><option value="61">61</option><option value="62">62</option><option value="63">63</option><option value="64">64</option><option value="65">65</option><option value="66">66</option><option value="67">67</option><option value="68">68</option><option value="69">69</option><option value="70">70</option><option value="71">71</option><option value="72">72</option><option value="73">73</option><option value="74">74</option><option value="75">75</option><option value="76">76</option><option value="77">77</option><option value="78">78</option><option value="79">79</option><option value="80">80</option><option value="81">81</option><option value="82">82</option><option value="83">83</option><option value="84">84</option><option value="85">85</option><option value="86">86</option><option value="87">87</option><option value="88">88</option><option value="89">89</option><option value="90">90</option><option value="91">91</option><option value="92">92</option><option value="93">93</option><option value="94">94</option><option value="95">95</option><option value="96">96</option><option value="97">97</option><option value="98">98</option><option value="99">99</option><option value="100">100</option></select>
+                          </div>
+                        <div id="paypal-button-container"></div>
+                        </div>
+                      </div>
+                      <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+                      <script>
+                        function initPayPalButton() {
+                          var shipping = 0;
+                          var itemOptions = document.querySelector("#smart-button-container #item-options");
+                      var quantity = parseInt(100);
+                      var quantitySelect = document.querySelector("#smart-button-container #quantitySelect");
+                      if (!isNaN(quantity)) {
+                        quantitySelect.style.visibility = "visible";
+                      }
+                      var orderDescription = 'After Payment please fill in the above Form';
+                      if(orderDescription === '') {
+                        orderDescription = 'Item';
+                      }
+                      paypal.Buttons({
+                        style: {
+                          shape: 'rect',
+                          color: 'gold',
+                          layout: 'vertical',
+                          label: 'paypal',
+                          
+                        },
+                        createOrder: function(data, actions) {
+                          var selectedItemDescription = itemOptions.options[itemOptions.selectedIndex].value;
+                          var selectedItemPrice = parseFloat(itemOptions.options[itemOptions.selectedIndex].getAttribute("price"));
+                          var tax = (0 === 0 || false) ? 0 : (selectedItemPrice * (parseFloat(0)/100));
+                          if(quantitySelect.options.length > 0) {
+                            quantity = parseInt(quantitySelect.options[quantitySelect.selectedIndex].value);
+                          } else {
+                            quantity = 1;
+                          }
+                  
+                          tax *= quantity;
+                          tax = Math.round(tax * 100) / 100;
+                          var priceTotal = quantity * selectedItemPrice + parseFloat(shipping) + tax;
+                          priceTotal = Math.round(priceTotal * 100) / 100;
+                          var itemTotalValue = Math.round((selectedItemPrice * quantity) * 100) / 100;
+                  
+                          return actions.order.create({
+                            purchase_units: [{
+                              description: orderDescription,
+                              amount: {
+                                currency_code: 'USD',
+                                value: priceTotal,
+                                breakdown: {
+                                  item_total: {
+                                    currency_code: 'USD',
+                                    value: itemTotalValue,
+                                  },
+                                  shipping: {
+                                    currency_code: 'USD',
+                                    value: shipping,
+                                  },
+                                  tax_total: {
+                                    currency_code: 'USD',
+                                    value: tax,
+                                  }
+                                }
+                              },
+                              items: [{
+                                name: selectedItemDescription,
+                                unit_amount: {
+                                  currency_code: 'USD',
+                                  value: selectedItemPrice,
+                                },
+                                quantity: quantity
+                              }]
+                            }]
+                          });
+                        },
+                        onApprove: function(data, actions) {
+                          return actions.order.capture().then(function(orderData) {
+                            
+                            // Full available details
+                            console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+                  
+                            // Show a success message within this page, e.g.
+                            const element = document.getElementById('paypal-button-container');
+                            element.innerHTML = '';
+                            element.innerHTML = '<h3>Thank you for your payment!</h3>';
+                  
+                            // Or go to another URL:  actions.redirect('thank_you.html');
+                  
+                          });
+                        },
+                        onError: function(err) {
+                          console.log(err);
+                        },
+                      }).render('#paypal-button-container');
+                    }
+                    initPayPalButton();
+                      </script>
+                      </section>
+                    
+                <section id="refer" class="refer">
+                      <div class="container">
+                
+                        <div class="section-title" data-aos="fade-up">
+                          <h2></h2>
+                          <p>Refer & Earn</p>
+                        </div>     
+    <div id="refarea" style="text-align: center">
+      <h1>Referral program</h1>
+      <p>Share your referral link and get paid instantly to your wallet for every referred token purchase.</p>
+      <p>Total paid to referrers: <span id="refTotal"></span> BNB</p>
+      <p>Referral commission: <span id="refPercent">5</span>%</p>
+      <p>Your referral earnings: <span id="refMy"></span> BNB</p>
+      
+      <p>Share your referral link or QR code and get commission for referred token purchases instantly to your wallet.</p>
+      <p><input type="text" id="referLink" size="70" readonly="true"> <button id="copyreflink">Copy link</button></p>
+      <div id="refqrcode">
+          <div style="text-align: center" id="refqr"></div>
       </div>
-    </section><!-- End Contact Section -->
+      <p id="refErr" class="err" style="display: none">Please connect your wallet on Binance Smart Chain to generate your referral link!</p>
+  </div>
+</section>  
+</main><!-- End #main -->
 
-  </main><!-- End #main -->
 
+  <!-- ======= Footer ======= -->
+  
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="footer-top">
@@ -853,19 +530,19 @@ The total supply is 1 trillion (not minable) to be distributed as follows:
           <div class="col-lg-4 col-md-6">
             <div class="footer-info">
               <h3>LongevityCoin</h3>
-              <p class="pb-3"><em>Longevity InTime is a several verticals Project, including AI Longevity tracking Technology, variety of B2B AI algorithms for Medical institutions, Longevity Scientific Resort, Longevity Petition initiative & etc. The scientific vertical initiates, organizes, And guarantees openness of clinical trials of anti aging therapies.</em></p>
+              <p class="pb-3"><em>Longevity InTime is a several verticals project, including AI Longevity tracking technology, variety of B2B AI algorithms for medical institutions, Longevity Scientific Resort, Longevity Petition initiative & etc. The scientific vertical initiates, organizes, and guarantees openness of clinical trials of anti aging therapies.</em></p>
               <p>
                 300 Delaware Avenue, Suite 210-A <br>
                 Wilmington, Delaware, USA, 19801<br><br>
-                
-                <strong>Email:</strong> support@longevitycoin.org<br>
+                <strong>Phone:</strong> +1 5589 55488 55<br>
+                <strong>Email:</strong>teterin@intime.digital<br>
               </p>
               <div class="social-links mt-3">
-                <a href="https://twitter.com/LongevityInTime" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="https://www.facebook.com/LongActiveLifeInTime" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="https://www.instagram.com/longevityintime/" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
                 <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="https://www.linkedin.com/company/longevity-intime-biotech/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
               </div>
             </div>
           </div>
@@ -885,10 +562,10 @@ The total supply is 1 trillion (not minable) to be distributed as follows:
             <h4>Our Services</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="https://www.intime.digital/en/">Mobile app - AI Health Check Up</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="https://www.longevityscientificresort.com/">Longevity Scientific Resort</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="www.LongevityScientificResort.com">Longevity Scientific Resort</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">AI Powered Longevity & Anti-Aging SAAS Products</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="https://drive.google.com/file/d/1E9ffukF0SMYSmR0TlzhMRf8IxcyMYFdT/view">Whitepaper</a></li>
-   
+              
             </ul>
           </div>
 
@@ -922,15 +599,19 @@ The total supply is 1 trillion (not minable) to be distributed as follows:
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js">async</script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js">async</script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js">async</script>
-  <script src="assets/vendor/php-email-form/validate.js">async</script>
-  <script src="assets/vendor/purecounter/purecounter.js">async</script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js">async</script>
+  <script src="assets/vendor/aos/aos.js"async></script>
+  <script src="assets/vendor/purecounter/purecounter.js"async></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src='https://dappbuilder.org/js/jquery-3.6.0.min.js' type="text/javascript" charset="utf-8"async></script>
+  <script src='https://dappbuilder.org/js/ethers-5.0.umd.min.js' type="text/javascript" charset="utf-8"></script>
+  <script src='https://dappbuilder.org/bsc/tokensaletimerefadm/js/tokensale.ui.js' type="text/javascript" charset="utf-8"></script>
+  
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"async></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"async></script>
+  <script src="assets/vendor/php-email-form/validate.js"async></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js">async</script>
+  <script src="assets/js/main.js"async></script>
 
 </body>
 
