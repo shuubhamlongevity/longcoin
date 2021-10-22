@@ -6,7 +6,7 @@
   left: 0;
   z-index: 999999 !important;
   overflow: hidden;
-  -ms-touch-action: none;
+  -touch-action: none;
   touch-action: none;
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
@@ -130,7 +130,7 @@
   border: none;
   min-height: 165px;
   -webkit-overflow-scrolling: touch;
-  -ms-touch-action: auto;
+  -touch-action: auto;
   touch-action: auto;
 }
 
@@ -156,7 +156,7 @@
   height: auto;
   -o-object-fit: cover;
   object-fit: cover;
-  -ms-touch-action: none;
+  -touch-action: none;
   touch-action: none;
   margin: auto;
   min-width: 200px;
