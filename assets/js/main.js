@@ -34,6 +34,22 @@
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
   }
+ /**
+   * Preloader
+   */
+  let preloader = select('#preloader');
+  if (preloader) {
+    window.addEventListener('load', () => {
+      preloader.remove()
+    });
+  }
+
+  /**
+   * Initiate gallery lightbox 
+   */
+  const galleryLightbox = GLightbox({
+    selector: '.gallery-lightbox'
+  });
 
   /**
    * Navbar links active state on scroll
